@@ -1,0 +1,17 @@
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\debug\anycpu\resources.pri
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\debug\anycpu\AppxManifest.xml
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\debug\anycpu\CordovaApp.Phone.build.appxrecipe
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\bld\priconfig.xml
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\bld\priconfig.xml.intermediate
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\bld\layout.resfiles
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\bld\layout.resfiles.intermediate
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\bld\resources.resfiles
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\bld\resources.resfiles.intermediate
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\bld\pri.resfiles
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\bld\pri.resfiles.intermediate
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\bld\qualifiers.txt
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\bld\qualifiers.txt.intermediate
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\bld\MultipleQualifiersPerDimensionFound.txt
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\bld\ProjectArchitectures.txt
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\bld\package.map.txt
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\bld\_pkginfo.txt

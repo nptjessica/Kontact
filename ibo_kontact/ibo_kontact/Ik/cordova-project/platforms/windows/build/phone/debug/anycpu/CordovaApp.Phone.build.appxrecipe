@@ -1,0 +1,1467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>KARIM</Machine>
+    <WindowsUser>Karim_Utilisateur</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
+    <SolutionConfiguration>debug|anycpu</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>a998e9d0-ea21-11e6-8b23-671a35b1d186</PackageIdentityName>
+    <PackageIdentityPublisher>CN=%24username%24</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\bld\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\debug\anycpu\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\images\SplashScreen.scale-100.png">
+      <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\images\SplashScreenPhone.scale-240.png">
+      <PackagePath>images\SplashScreenPhone.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\images\Square150x150Logo.scale-240.png">
+      <PackagePath>images\Square150x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\images\Square310x310Logo.scale-100.png">
+      <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\images\Square44x44Logo.scale-100.png">
+      <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\images\Square44x44Logo.scale-240.png">
+      <PackagePath>images\Square44x44Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\images\Square71x71Logo.scale-100.png">
+      <PackagePath>images\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\images\Square71x71Logo.scale-240.png">
+      <PackagePath>images\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\images\StoreLogo.scale-240.png">
+      <PackagePath>images\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\images\Wide310x150Logo.scale-240.png">
+      <PackagePath>images\Wide310x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\action-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\action-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\action-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\action-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\alert-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\alert-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\alert-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\alert-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\arrow-d-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\arrow-d-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\arrow-d-l-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\arrow-d-l-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\arrow-d-l-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\arrow-d-l-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\arrow-d-r-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\arrow-d-r-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\arrow-d-r-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\arrow-d-r-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\arrow-d-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\arrow-d-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\arrow-l-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\arrow-l-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\arrow-l-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\arrow-l-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\arrow-r-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\arrow-r-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\arrow-r-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\arrow-r-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\arrow-u-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\arrow-u-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\arrow-u-l-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\arrow-u-l-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\arrow-u-l-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\arrow-u-l-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\arrow-u-r-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\arrow-u-r-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\arrow-u-r-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\arrow-u-r-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\arrow-u-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\arrow-u-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\audio-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\audio-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\audio-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\audio-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\back-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\back-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\back-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\back-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\bars-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\bars-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\bars-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\bars-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\bullets-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\bullets-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\bullets-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\bullets-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\calendar-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\calendar-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\calendar-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\calendar-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\camera-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\camera-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\camera-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\camera-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\carat-d-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\carat-d-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\carat-d-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\carat-d-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\carat-l-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\carat-l-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\carat-l-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\carat-l-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\carat-r-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\carat-r-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\carat-r-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\carat-r-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\carat-u-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\carat-u-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\carat-u-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\carat-u-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\check-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\check-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\check-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\check-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\clock-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\clock-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\clock-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\clock-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\cloud-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\cloud-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\cloud-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\cloud-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\comment-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\comment-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\comment-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\comment-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\delete-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\delete-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\delete-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\delete-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\edit-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\edit-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\edit-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\edit-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\eye-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\eye-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\eye-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\eye-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\forbidden-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\forbidden-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\forbidden-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\forbidden-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\forward-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\forward-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\forward-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\forward-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\gear-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\gear-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\gear-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\gear-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\grid-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\grid-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\grid-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\grid-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\heart-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\heart-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\heart-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\heart-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\home-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\home-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\home-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\home-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\info-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\info-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\info-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\info-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\location-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\location-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\location-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\location-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\lock-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\lock-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\lock-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\lock-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\mail-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\mail-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\mail-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\mail-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\minus-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\minus-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\minus-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\minus-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\navigation-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\navigation-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\navigation-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\navigation-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\phone-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\phone-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\phone-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\phone-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\plus-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\plus-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\plus-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\plus-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\power-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\power-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\power-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\power-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\recycle-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\recycle-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\recycle-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\recycle-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\refresh-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\refresh-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\refresh-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\refresh-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\search-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\search-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\search-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\search-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\shop-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\shop-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\shop-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\shop-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\star-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\star-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\star-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\star-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\tag-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\tag-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\tag-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\tag-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\user-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\user-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\user-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\user-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\video-black.png">
+      <PackagePath>www\css\themes\1\images\icons-png\video-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\icons-png\video-white.png">
+      <PackagePath>www\css\themes\1\images\icons-png\video-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\action-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\action-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\action-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\action-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\alert-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\alert-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\alert-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\alert-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\arrow-d-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\arrow-d-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\arrow-d-l-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\arrow-d-l-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\arrow-d-l-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\arrow-d-l-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\arrow-d-r-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\arrow-d-r-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\arrow-d-r-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\arrow-d-r-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\arrow-d-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\arrow-d-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\arrow-l-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\arrow-l-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\arrow-l-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\arrow-l-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\arrow-r-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\arrow-r-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\arrow-r-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\arrow-r-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\arrow-u-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\arrow-u-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\arrow-u-l-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\arrow-u-l-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\arrow-u-l-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\arrow-u-l-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\arrow-u-r-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\arrow-u-r-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\arrow-u-r-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\arrow-u-r-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\arrow-u-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\arrow-u-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\audio-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\audio-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\audio-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\audio-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\back-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\back-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\back-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\back-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\bars-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\bars-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\bars-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\bars-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\bullets-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\bullets-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\bullets-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\bullets-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\calendar-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\calendar-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\calendar-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\calendar-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\camera-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\camera-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\camera-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\camera-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\carat-d-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\carat-d-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\carat-d-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\carat-d-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\carat-l-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\carat-l-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\carat-l-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\carat-l-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\carat-r-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\carat-r-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\carat-r-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\carat-r-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\carat-u-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\carat-u-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\carat-u-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\carat-u-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\check-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\check-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\check-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\check-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\clock-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\clock-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\clock-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\clock-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\cloud-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\cloud-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\cloud-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\cloud-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\comment-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\comment-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\comment-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\comment-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\delete-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\delete-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\delete-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\delete-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\edit-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\edit-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\edit-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\edit-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\eye-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\eye-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\eye-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\eye-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\forbidden-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\forbidden-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\forbidden-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\forbidden-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\forward-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\forward-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\forward-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\forward-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\gear-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\gear-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\gear-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\gear-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\grid-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\grid-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\grid-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\grid-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\heart-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\heart-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\heart-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\heart-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\home-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\home-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\home-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\home-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\info-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\info-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\info-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\info-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\location-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\location-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\location-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\location-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\lock-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\lock-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\lock-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\lock-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\mail-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\mail-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\mail-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\mail-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\minus-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\minus-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\minus-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\minus-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\navigation-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\navigation-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\navigation-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\navigation-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\phone-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\phone-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\phone-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\phone-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\plus-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\plus-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\plus-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\plus-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\power-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\power-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\power-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\power-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\recycle-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\recycle-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\recycle-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\recycle-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\refresh-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\refresh-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\refresh-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\refresh-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\search-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\search-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\search-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\search-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\shop-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\shop-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\shop-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\shop-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\star-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\star-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\star-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\star-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\tag-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\tag-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\tag-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\tag-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\user-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\user-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\user-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\user-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\video-black.png">
+      <PackagePath>www\css\themes\2\images\icons-png\video-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\icons-png\video-white.png">
+      <PackagePath>www\css\themes\2\images\icons-png\video-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\img\logo.png">
+      <PackagePath>www\img\logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\action-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\action-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\action-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\action-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\alert-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\alert-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\alert-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\alert-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\arrow-d-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\arrow-d-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\arrow-d-l-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\arrow-d-l-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\arrow-d-l-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\arrow-d-l-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\arrow-d-r-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\arrow-d-r-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\arrow-d-r-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\arrow-d-r-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\arrow-d-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\arrow-d-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\arrow-l-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\arrow-l-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\arrow-l-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\arrow-l-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\arrow-r-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\arrow-r-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\arrow-r-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\arrow-r-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\arrow-u-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\arrow-u-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\arrow-u-l-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\arrow-u-l-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\arrow-u-l-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\arrow-u-l-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\arrow-u-r-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\arrow-u-r-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\arrow-u-r-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\arrow-u-r-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\arrow-u-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\arrow-u-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\audio-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\audio-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\audio-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\audio-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\back-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\back-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\back-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\back-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\bars-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\bars-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\bars-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\bars-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\bullets-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\bullets-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\bullets-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\bullets-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\calendar-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\calendar-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\calendar-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\calendar-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\camera-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\camera-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\camera-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\camera-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\carat-d-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\carat-d-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\carat-d-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\carat-d-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\carat-l-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\carat-l-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\carat-l-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\carat-l-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\carat-r-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\carat-r-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\carat-r-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\carat-r-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\carat-u-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\carat-u-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\carat-u-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\carat-u-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\check-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\check-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\check-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\check-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\clock-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\clock-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\clock-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\clock-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\cloud-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\cloud-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\cloud-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\cloud-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\comment-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\comment-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\comment-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\comment-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\delete-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\delete-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\delete-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\delete-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\edit-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\edit-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\edit-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\edit-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\eye-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\eye-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\eye-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\eye-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\forbidden-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\forbidden-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\forbidden-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\forbidden-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\forward-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\forward-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\forward-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\forward-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\gear-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\gear-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\gear-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\gear-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\grid-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\grid-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\grid-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\grid-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\heart-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\heart-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\heart-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\heart-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\home-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\home-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\home-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\home-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\info-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\info-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\info-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\info-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\location-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\location-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\location-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\location-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\lock-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\lock-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\lock-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\lock-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\mail-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\mail-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\mail-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\mail-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\minus-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\minus-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\minus-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\minus-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\navigation-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\navigation-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\navigation-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\navigation-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\phone-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\phone-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\phone-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\phone-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\plus-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\plus-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\plus-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\plus-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\power-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\power-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\power-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\power-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\recycle-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\recycle-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\recycle-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\recycle-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\refresh-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\refresh-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\refresh-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\refresh-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\search-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\search-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\search-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\search-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\shop-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\shop-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\shop-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\shop-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\star-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\star-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\star-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\star-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\tag-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\tag-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\tag-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\tag-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\user-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\user-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\user-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\user-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\video-black.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\video-black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-png\video-white.png">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-png\video-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\coordonnees.html">
+      <PackagePath>www\coordonnees.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\menu.html">
+      <PackagePath>www\menu.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\nouveau-contact.html">
+      <PackagePath>www\nouveau-contact.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\page-presence.html">
+      <PackagePath>www\page-presence.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\visite-du-jour.html">
+      <PackagePath>www\visite-du-jour.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\cordova-js-src\exec.js">
+      <PackagePath>www\cordova-js-src\exec.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\cordova-js-src\platform.js">
+      <PackagePath>www\cordova-js-src\platform.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\js\api-messages.js">
+      <PackagePath>www\js\api-messages.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\js\bookings-controller.js">
+      <PackagePath>www\js\bookings-controller.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\js\index.js">
+      <PackagePath>www\js\index.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\js\session.js">
+      <PackagePath>www\js\session.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\js\settings.js">
+      <PackagePath>www\js\settings.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\js\signin-controller.js">
+      <PackagePath>www\js\signin-controller.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\js\signup-controller.js">
+      <PackagePath>www\js\signup-controller.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\fastclick\fastclick.min.js">
+      <PackagePath>www\lib\fastclick\fastclick.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile-1.4.5.js">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile-1.4.5.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile-1.4.5.min.js">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile-1.4.5.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jquery\2.1.1\jquery-2.1.1.js">
+      <PackagePath>www\lib\jquery\2.1.1\jquery-2.1.1.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jquery\2.1.1\jquery-2.1.1.min.js">
+      <PackagePath>www\lib\jquery\2.1.1\jquery-2.1.1.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\plugins\org.apache.cordova.dialogs\src\windows\NotificationProxy.js">
+      <PackagePath>www\plugins\org.apache.cordova.dialogs\src\windows\NotificationProxy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\plugins\org.apache.cordova.dialogs\www\notification.js">
+      <PackagePath>www\plugins\org.apache.cordova.dialogs\www\notification.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\plugins\org.apache.cordova.statusbar\src\windows\StatusBarProxy.js">
+      <PackagePath>www\plugins\org.apache.cordova.statusbar\src\windows\StatusBarProxy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\plugins\org.apache.cordova.statusbar\www\statusbar.js">
+      <PackagePath>www\plugins\org.apache.cordova.statusbar\www\statusbar.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\WinJS\js\base.js">
+      <PackagePath>www\WinJS\js\base.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\app.css">
+      <PackagePath>www\css\app.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\index.css">
+      <PackagePath>www\css\index.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\conf-room1.css">
+      <PackagePath>www\css\themes\1\conf-room1.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\conf-room1.min.css">
+      <PackagePath>www\css\themes\1\conf-room1.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\jquery.mobile.icons.min.css">
+      <PackagePath>www\css\themes\1\jquery.mobile.icons.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\bookit.css">
+      <PackagePath>www\css\themes\2\bookit.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\bookit.min.css">
+      <PackagePath>www\css\themes\2\bookit.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\jquery.mobile.icons.min.css">
+      <PackagePath>www\css\themes\2\jquery.mobile.icons.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile-1.4.5.css">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile-1.4.5.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile-1.4.5.min.css">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile-1.4.5.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile.external-png-1.4.5.css">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile.external-png-1.4.5.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile.external-png-1.4.5.min.css">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile.external-png-1.4.5.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile.icons-1.4.5.css">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile.icons-1.4.5.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile.icons-1.4.5.min.css">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile.icons-1.4.5.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile.inline-png-1.4.5.css">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile.inline-png-1.4.5.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile.inline-png-1.4.5.min.css">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile.inline-png-1.4.5.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile.inline-svg-1.4.5.css">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile.inline-svg-1.4.5.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile.inline-svg-1.4.5.min.css">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile.inline-svg-1.4.5.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile.structure-1.4.5.css">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile.structure-1.4.5.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile.structure-1.4.5.min.css">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile.structure-1.4.5.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile.theme-1.4.5.css">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile.theme-1.4.5.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile.theme-1.4.5.min.css">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile.theme-1.4.5.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\1\images\ajax-loader.gif">
+      <PackagePath>www\css\themes\1\images\ajax-loader.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\css\themes\2\images\ajax-loader.gif">
+      <PackagePath>www\css\themes\2\images\ajax-loader.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\ajax-loader.gif">
+      <PackagePath>www\lib\jqm\1.4.5\images\ajax-loader.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\action-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\action-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\action-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\action-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\alert-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\alert-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\alert-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\alert-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\arrow-d-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\arrow-d-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\arrow-d-l-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\arrow-d-l-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\arrow-d-l-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\arrow-d-l-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\arrow-d-r-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\arrow-d-r-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\arrow-d-r-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\arrow-d-r-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\arrow-d-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\arrow-d-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\arrow-l-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\arrow-l-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\arrow-l-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\arrow-l-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\arrow-r-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\arrow-r-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\arrow-r-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\arrow-r-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\arrow-u-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\arrow-u-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\arrow-u-l-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\arrow-u-l-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\arrow-u-l-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\arrow-u-l-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\arrow-u-r-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\arrow-u-r-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\arrow-u-r-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\arrow-u-r-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\arrow-u-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\arrow-u-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\audio-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\audio-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\audio-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\audio-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\back-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\back-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\back-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\back-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\bars-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\bars-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\bars-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\bars-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\bullets-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\bullets-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\bullets-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\bullets-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\calendar-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\calendar-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\calendar-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\calendar-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\camera-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\camera-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\camera-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\camera-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\carat-d-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\carat-d-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\carat-d-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\carat-d-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\carat-l-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\carat-l-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\carat-l-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\carat-l-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\carat-r-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\carat-r-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\carat-r-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\carat-r-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\carat-u-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\carat-u-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\carat-u-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\carat-u-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\check-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\check-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\check-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\check-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\clock-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\clock-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\clock-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\clock-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\cloud-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\cloud-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\cloud-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\cloud-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\comment-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\comment-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\comment-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\comment-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\delete-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\delete-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\delete-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\delete-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\edit-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\edit-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\edit-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\edit-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\eye-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\eye-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\eye-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\eye-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\forbidden-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\forbidden-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\forbidden-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\forbidden-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\forward-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\forward-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\forward-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\forward-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\gear-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\gear-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\gear-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\gear-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\grid-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\grid-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\grid-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\grid-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\heart-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\heart-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\heart-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\heart-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\home-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\home-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\home-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\home-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\info-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\info-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\info-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\info-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\location-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\location-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\location-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\location-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\lock-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\lock-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\lock-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\lock-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\mail-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\mail-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\mail-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\mail-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\minus-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\minus-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\minus-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\minus-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\navigation-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\navigation-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\navigation-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\navigation-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\phone-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\phone-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\phone-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\phone-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\plus-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\plus-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\plus-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\plus-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\power-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\power-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\power-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\power-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\recycle-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\recycle-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\recycle-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\recycle-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\refresh-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\refresh-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\refresh-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\refresh-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\search-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\search-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\search-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\search-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\shop-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\shop-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\shop-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\shop-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\star-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\star-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\star-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\star-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\tag-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\tag-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\tag-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\tag-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\user-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\user-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\user-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\user-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\video-black.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\video-black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\images\icons-svg\video-white.svg">
+      <PackagePath>www\lib\jqm\1.4.5\images\icons-svg\video-white.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jqm\1.4.5\jquery.mobile-1.4.5.min.map">
+      <PackagePath>www\lib\jqm\1.4.5\jquery.mobile-1.4.5.min.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\lib\jquery\2.1.1\jquery-2.1.1.min.map">
+      <PackagePath>www\lib\jquery\2.1.1\jquery-2.1.1.min.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\www\personne_pk.json">
+      <PackagePath>www\personne_pk.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\build\phone\debug\anycpu\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\">
+      <Name>Microsoft.Phone.WinJS.2.1</Name>
+      <Version>1.0.9651.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.Phone.WinJS.2.1, MinVersion=1.0.9651.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\Microsoft.Phone.WinJS.2.1.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

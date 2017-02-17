@@ -1,0 +1,1 @@
+C:\xampp\htdocs\apps_mobile\ibo_kontact\Ik\cordova-project\platforms\windows\CordovaApp.Windows.jsproj;neutral

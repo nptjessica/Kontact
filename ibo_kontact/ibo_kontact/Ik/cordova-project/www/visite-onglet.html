@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+
+    <link href="css/themes/2/bookit.min.css" rel="stylesheet" />
+    <link href="css/themes/2/jquery.mobile.icons.min.css" rel="stylesheet" />
+    <link href="lib/jqm/1.4.5/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <title>Ibo Kontact</title>
+</head>
+ 
+        <script>
+                //selon le bouton choisi, champ1 est affiché
+                // alors que champ2 et champ3 reste caché
+                function afficher(btn,champ1,champ2,champ3)
+                {
+                    if (btn.checked)
+                   {
+                        document.getElementById(champ1).style.display="inline";
+                        document.getElementById(champ2).style.display="none";
+                        document.getElementById(champ3).style.display="none";
+                   }
+                }
+
+                //affiche le texte par défaut
+                function onBlur(el)
+                {
+                   if (el.value == '') el.value = el.defaultValue;
+                }
+                //supprime le texte par défaut
+                function onFocus(el)
+                {
+                    if (el.value == el.defaultValue) el.value = '';
+                }
+                </script>
+
+<body>
+         
+         
+
+     <div data-role="header" data-id="foo1" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="coordonnees.html" data-prefetch="true" class="ui-btn-active ui-state-persist " >Coordonnees</a></li>
+            <li><a href="visite.html" data-prefetch="true" class="ui-btn-active ui-state-persist ">Visite</a></li>
+            <li><a href="historique.html" data-prefetch="true">Historique</a></li>
+            
+        </ul>
+    </div><!-- /navbar -->
+</div><!-- /footer -->
+
+<div data-role="page" id="page-oui-non">
+        <div data-role="header" data-theme="c" data-position="fixed">
+            <a href="#page-index" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+            <h1>Ibo Kontact</h1>
+        </div><!-- /header -->
+        <div role="main" class="ui-content">
+            <h3>A la maison a ce jour</h3>
+            <div id="ctn-err" class="bi-invisible"></div>             
+            <a href="#oui" data-transition="slide" class="ui-btn ui-btn-g ui-corner-all bi-top-margin-1-5" >oui</a>
+            <a href="#non" data-transition="slide" class="ui-btn ui-btn-r ui-corner-all bi-top-margin-1-5">non</a>
+            
+             
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+
+
+    <div data-role="page" id="non" class="ui-field-contain" data-type="horizontal">
+        <div data-role="header" data-theme="c" data-position="fixed">
+            <a href="#page-index" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+            <h1>Ibo Kontact</h1>
+        </div><!-- /header -->
+            <h3>A la maison a ce jour: NON </h3>
+            <label for="mov1">En déplacement</label>
+            <input type="radio" name="raison_maison_non" id="mov1" onclick="afficher(this,'infos_mov1','infos_mov2','infos_mov3');">
+            <form id="infos_mov1" style="display:none">
+                <input type="text" id="raison_deplacement" value="Raison du déplacement" onblur="onBlur(this)" onfocus="onFocus(this)">
+
+                <div id="adresse_actuelle">
+                    <input list="adresse" name="adresse_actuelle" value="Ville/Village + Quartier + Maison" onblur="onBlur(this)" onfocus="onFocus(this)">
+                    <datalist id="adresse">
+                        <option value="Non indiquée">
+                    </datalist>
+                </div><br>
+
+                <label for="date_depart">Date de départ</label>
+                <input type="date" id="date_depart"><br>
+
+                <label for="date_retour">Date de retour</label>
+                <input type="date" id="date_retour"><br>
+
+                <div data-role="main" class="ui-content">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="reset" name="bouton_reset" value="Tout Effacer">
+                        <input type="button" name="bouton_save" value="Enregistrer" onclick="document.location.href='#pageConfirmationEnregistrement'">
+                    </fieldset>
+                </div>
+            </form>
+
+            <label for="mov2">Perdu de vue</label>
+            <input type="radio" name="raison_maison_non" id="mov2" onclick="afficher(this,'infos_mov2','infos_mov1','infos_mov3');">
+            <form id="infos_mov2" style="display:none">
+                <div id="lieu_probable">
+                    <input list="lieu" name="lieu_probable" value="Lieu probable" onblur="onBlur(this)" onfocus="onFocus(this)">
+                    <datalist id="lieu">
+                        <option value="Non indiquée">
+                    </datalist>
+                </div><br>
+
+                <div id="quartier_probable">
+                    <input list="quartier" name="quartier_probable" value="Quartier probable" onblur="onBlur(this)" onfocus="onFocus(this)">
+                    <datalist id="quartier">
+                        <option value="Non indiquée">
+                    </datalist>
+                </div><br>
+
+                <div id="ville_probable">
+                    <input list="ville" name="ville_probable" value="Ville probable" onblur="onBlur(this)" onfocus="onFocus(this)">
+                    <datalist id="ville">
+                        <option value="Non indiquée">
+                    </datalist>
+                </div><br>
+
+                <div id="contact_probable">
+                    <input list="contact" name="contact_probable" value="Contact probable" onblur="onBlur(this)" onfocus="onFocus(this)">
+                    <datalist id="contact">
+                        <option value="Non indiquée">
+                    </datalist>
+                </div><br>
+
+                <div data-role="main" class="ui-content">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="reset" name="bouton_reset" value="Tout Effacer">
+                        <input type="submit" name="bouton_save" value="Enregistrer" onclick="document.location.href='#pageConfirmationEnregistrement'">
+                    </fieldset>
+                </div>
+            </form>
+
+            <label for="mov3">Décédé(e)</label>
+            <input type="radio" name="raison_maison_non" id="mov3" onclick="afficher(this,'infos_mov3','infos_mov1','infos_mov2');">
+            <form id="infos_mov3" style="display:none">
+                <label for="date_deces">Date de décès</label>
+                <input type="date" id="date_deces">
+
+                <label>Lieu de décès</label>
+                <label for="deces_domicile">Domicile</label>
+                <input type="radio" id="deces_domicile" class="ui-field-contain">
+                <label for="deces_centre">Centre de santé</label>
+                <input type="radio" id="deces_centre" class="ui-field-contain" onclick="afficher(this,'deces_choix_centre','infos_mov1','infos_mov2');">
+                <div id="deces_choix_centre" style="display:none">
+                    <input list="liste_centres" name="liste_centre">
+                    <datalist id="liste_centres">
+                        <option value="1 centre de la région"> <!-- coder la récupération des centres de la région -->
+                    </datalist>
+                </div>
+                <label for="deces_autre_lieu">Autre lieu</label>
+                <input type="text" id="deces_autre_lieu" value="précisez" onblur="onBlur(this)" onfocus="onFocus(this)">
+
+                <div data-role="main" class="ui-content">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="reset" name="bouton_reset" value="Tout Effacer">
+                        <input type="submit" name="bouton_save" value="Enregistrer" onclick="document.location.href='#pageConfirmationEnregistrement'">
+                        <!-- coder 1 fonction pour enregistrer les données -->
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+
+ 
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="lib/fastclick/fastclick.min.js"></script>
+    <script src="lib/jquery/2.1.1/jquery-2.1.1.min.js"></script>
+     
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="lib/jqm/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript">
+     
+    </script>
+
+</body>
+</html>
