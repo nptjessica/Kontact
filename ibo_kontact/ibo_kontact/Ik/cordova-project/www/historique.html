@@ -18,36 +18,31 @@
         <div data-role="header" data-id="foo1" data-position="fixed">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="coordonnees.html" data-prefetch="true" class="ui-btn-active ui-state-persist" >Coordonnees</a></li>
+                    <li><a href="coordonnees.html" data-prefetch="true">Coordonnees</a></li>
                     <li><a href="visite-onglet.html" data-prefetch="true">Visite</a></li>
-                    <li><a href="historique.html" data-prefetch="true">Historique</a></li>
+                    <li><a href="historique.html" data-prefetch="true" class="ui-btn-active ui-state-persist">Historique</a></li>
                 </ul>
             </div><!-- /navbar -->
         </div><!-- /footer -->
 
-        <div data-role="main" class="ui-content">
-            <!-- Données de "Source du contact" proviennent de la BD renseigné par les investigateurs
-            Données non modifiables par l'utilisateur -->
-            <label>Nom</label>
-            <label>Prénoms</label>
-            <label>Surnom</label>
-            <label>Sexe</label>
-            <label>Date de naissance</label>
-            <label>Profession</label>
-            <label>Lieu de travail</label>
+        <div data-role="tabs" class="ui-content">
+            <ul class="tab">
+                <li><a class="tablinks" onclick="openOnglet(event, 'Visite')">Visite</a></li>
+                <li><a class="tablinks" onclick="openOnglet(event, 'Medical')">Médical</a></li>
+                <li><a class="tablinks" onclick="openOnglet(event, 'VisiteMedical')">Visite / Médical</a></li>
+            </ul>
 
-            <p>Résidence pour le suivi</p>
-            <label>Maison</label>
-            <label>Ville/Village</label>
-            <label>Quartier</label>
-            <label>Région</label>
-            <label>Téléphone</label>
-            <label>Téléphone</label>
+            <div id="Visite" class="tabcontent">
+                détail des données jour par jour + état psychologique et physique + autres observation
+            </div>
 
-            <p>Situation immunologique</p>
-            <label>Vaciné(e) Ebola</label><br>
+            <div id="Medical" class="tabcontent">
+                détail des vistes médical: T°, signes cliniques + détails + autres observations
+            </div>
 
-            <a href="nouveau-contact.html" data-transition="slide" class="ui-btn ui-corner-all">Nouveau Contact</a>
+            <div id="VisiteMedical" class="tabcontent">
+                détail des données jour par jour + état psychologique et physique + autres observation
+            </div>
         </div>
 
         <script type="text/javascript" src="cordova.js"></script>
@@ -57,8 +52,7 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script src="lib/jqm/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <script type="text/javascript">
-        $("#loadJson").click(loadJson);
+            $("#loadJson").click(loadJson);
         </script>
-
     </body>
 </html>
