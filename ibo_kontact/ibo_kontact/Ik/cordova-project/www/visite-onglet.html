@@ -191,41 +191,40 @@
             <div data-role="main" class="ui-content">
                 <h3>A la maison a ce jour: <span>OUI</span></h3>
                 <form method="POST">
+                    <label for="moral">Etat moral</label>
+                    <fieldset id="moral" data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" id="moral-smiling" name="radio" value="Souriant"><label for="moral-smiling"><img src="img/smiling.png"/></label>
+                        <input type="radio" id="moral-sad" name="radio" value="Triste"><label for="moral-sad"><img src="img/sad.png"/></label>
+                        <input type="radio" id="moral-unhappy" name="radio" value="Mal"><label for="moral-unhappy"><img src="img/unhappy.png"/></label>
+                    </fieldset>
+
+                    <label for="moral">Etat physique</label>
+                    <fieldset id="physique" data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" id="physique-smiling" name="radio" value="Souriant"><label for="physique-smiling"><img src="img/smiling.png"/></label>
+                        <input type="radio" id="physique-sad" name="radio" value="Triste"><label for="physique-sad"><img src="img/sad.png"/></label>
+                        <input type="radio" id="physique-unhappy" name="radio" value="Mal"><label for="physique-unhappy"><img src="img/unhappy.png"/></label>
+                    </fieldset>
 
                     <table>
                         <tr>
-                            <td>Etat moral</td>
-                            <td><input type="image" name="moral" src="img/smiling.png" width="auto%" height="75%"></td>
-                            <td><input type="image" name="moral" src="img/sad.png" width="auto%" height="75%"></td>
-                            <td><input type="image" name="moral" src="img/unhappy.png" width="auto%" height="75%"></td>
-                        </tr>
-
-                        <tr>
-                            <td>Etat physique</td>
-                            <td><input type="image" name="physique" src="img/smiling.png" width="auto" height="75%"></td>
-                            <td><input type="image" name="physique" src="img/sad.png" width="auto" height="75%"></td>
-                            <td><input type="image" name="physique" src="img/unhappy.png" width="auto" height="75%"></td>
-                        </tr>
-
-                        <tr>
                             <td>Code patient</td>
-                            <td><button>1<br><img name="code-patient" src="img/ice-cream-cone.png" width="50%" height="50%"></button></td>
-                            <td><button>2<br><img name="code-patient" src="img/sun-glasses.png" width="50%" height="50%"></button></td>
-                            <td><button>3<br><img name="code-patient" src="img/old-phone.png" width="50%" height="50%"></button></td>
+                            <td><button value="1">1<br><img name="code-patient" src="img/ice-cream-cone.png" width="50%" height="50%"></button></td>
+                            <td><button value="2">2<br><img name="code-patient" src="img/sun-glasses.png" width="50%" height="50%"></button></td>
+                            <td><button value="3">3<br><img name="code-patient" src="img/old-phone.png" width="50%" height="50%"></button></td>
                         </tr>
 
                         <tr>
                             <td></td>
-                            <td><button>4<br><img name="code-patient" src="img/dog.png" width="50%" height="50%"></button></td>
-                            <td><button>5<br><img name="code-patient" src="img/dices.png" width="50%" height="50%"></button></td>
-                            <td><button>6<br><img name="code-patient" src="img/flower.png" width="50%" height="50%"></button></td>
+                            <td><button value="4">4<br><img name="code-patient" src="img/dog.png" width="50%" height="50%"></button></td>
+                            <td><button value="5">5<br><img name="code-patient" src="img/dices.png" width="50%" height="50%"></button></td>
+                            <td><button value="6">6<br><img name="code-patient" src="img/flower.png" width="50%" height="50%"></button></td>
                         </tr>
 
                         <tr>
                             <td></td>
-                            <td><button>7<br><img name="code-patient" src="img/scissors.png" width="50%" height="50%"></button></td>
-                            <td><button>8<br><img name="code-patient" src="img/football.png" width="50%" height="50%"></button></td>
-                            <td><button>9<br><img name="code-patient" src="img/sun.png" width="50%" height="50%"></button></td>
+                            <td><button value="7">7<br><img name="code-patient" src="img/scissors.png" width="50%" height="50%"></button></td>
+                            <td><button value="8">8<br><img name="code-patient" src="img/football.png" width="50%" height="50%"></button></td>
+                            <td><button value="9">9<br><img name="code-patient" src="img/sun.png" width="50%" height="50%"></button></td>
                         </tr>
                     </table>
 
