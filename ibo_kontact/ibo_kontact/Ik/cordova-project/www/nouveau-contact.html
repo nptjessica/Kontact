@@ -1,71 +1,120 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
 
-    <link href="css/themes/2/bookit.min.css" rel="stylesheet" />
-    <link href="css/themes/2/jquery.mobile.icons.min.css" rel="stylesheet" />
-    <link href="lib/jqm/1.4.5/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="css/app.css" />
-    <title>Ibo Kontact</title>
-</head>
-<body> 
+        <link href="css/themes/2/bookit.min.css" rel="stylesheet" />
+        <link href="css/themes/2/jquery.mobile.icons.min.css" rel="stylesheet" />
+        <link href="lib/jqm/1.4.5/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+        <title>Ibo Kontact</title>
+    </head>
+    <body>
+        <div data-role="page" id="page-signup">
+            <div class="bi-header" data-role="header" data-theme="c" data-position="fixed">
+                <a href="menu.html" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+                <h1>BookIt</h1>
+            </div><!-- /header -->
 
-      <div data-role="page" id="page-signup">
-        <div class="bi-header" data-role="header" data-theme="c" data-position="fixed">
-            <a href="#page-index" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
-            <h1>BookIt</h1>
-        </div><!-- /header -->
-        <div role="main" class="ui-content">
-            <h3>Sign Up</h3>
-            <div id="ctn-err" class="bi-invisible"></div>
-            <label for="txt-first-name">First Name</label>
-            <input type="text" name="txt-first-name" id="txt-first-name" value="">
-            <label for="txt-last-name">Last Name</label>
-            <input type="text" name="txt-last-name" id="txt-last-name" value="">
-            <label for="txt-email-address">Email Address</label>
-            <input type="text" name="txt-email-address" id="txt-email-address" value="">
-            <label for="txt-password">Password</label>
-            <input type="password" name="txt-password" id="txt-password" value="">
-            <label for="txt-password-confirm">Confirm Password</label>
-            <input type="password" name="txt-password-confirm" id="txt-password-confirm" value="">
-            <!--<a href="#dlg-sign-up-sent" data-rel="popup" data-transition="pop" data-position-to="window" id="btn-submit" class="ui-btn ui-btn-b ui-corner-all bi-top-margin-1-5">Submit</a>-->
-            <button id="btn-submit" class="ui-btn ui-btn-b ui-corner-all bi-top-margin-1-5">Submit</button>
-            <div data-role="popup" id="dlg-sign-up-sent" data-dismissible="false" style="max-width:400px;">
-                <div data-role="header">
-                    <h1>Almost done...</h1>
-                </div>
-                <div role="main" class="ui-content">
-                    <h3>Confirm Your Email Address</h3>
-                    <p>We sent you an email with instructions on how to confirm your email address. Please check your inbox and follow the instructions in the email.</p>
-                    <div class="bi-text-center"><a href="sign-in.html" class="ui-btn ui-corner-all ui-shadow ui-btn-b bi-top-margin-1-5">OK</a></div>
+            <div role="main" class="ui-content">
+                <!-- Données de "Source du contact" proviennent de la BD renseigné par les investigateurs
+                Données non modifiables par l'utilisateur -->
+                <p>Source du contact</p>
+                <label>Nom</label>
+                <label>Prénoms</label>
+                <label>Surnom</label>
+                <label>Sexe</label>
+                <label>Date de naissance</label>
+                <label>Profession</label>
+                <label>Lieu de travail</label>
 
-                </div>
-            </div>
-        </div><!-- /content -->
-    </div><!-- /page -->
-    <div data-role="page" id="page-signup-succeeded">
-        <div data-role="header" data-theme="c">
-            <h1>Book It</h1>
-        </div><!-- /header -->
-        <div role="main" class="ui-content">
-            <h2 class="bi-text-center">Registration Succeeded</h2>
-            <p class="bi-top-margin-1-5">Congratulations!  You are now registered with BookIt.</p>
-            <a href="#page-signin" class="ui-btn ui-btn-b ui-corner-all">Sign In</a>
-            <p></p>
-        </div><!-- /content -->
-    </div><!-- /page -->
-    
-    <script type="text/javascript" src="cordova.js"></script>
-    <script src="lib/fastclick/fastclick.min.js"></script>
-    <script src="lib/jquery/2.1.1/jquery-2.1.1.min.js"></script>
-    
-    <script type="text/javascript" src="js/index.js"></script>
-    <script src="lib/jqm/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-</body>
+                <p>Résidence pour le suivi</p>
+                <label>Maison</label>
+                <label>Ville/Village</label>
+                <label>Quartier</label>
+                <label>Région</label>
+                <label>Téléphone</label>
+                <label>Téléphone</label>
+
+                <p>Situation immunologique</p>
+                <label>Vaciné(e) Ebola</label>
+
+                <form method="post" action="coordonnees.html">
+                    <div class="ui-field-contain">
+                        <p>Nouveau contact</p>
+                        <label for="nom_contact2">Nom</label>
+                        <input type="text" name="nom_contact2" id="nom_contact2" value="" data-clear-btn="true" data-mini="true">
+
+                        <label for="prenoms_contact2">Prénoms</label>
+                        <input type="text" name="prenoms_contact2" id="prenoms_contact2" value="" data-clear-btn="true" data-mini="true">
+
+                        <label for="surnom_contact2">Surnom</label>
+                        <input type="text" name="surnom_contact2" id="surnom_contact2" value="" data-clear-btn="true" data-mini="true">
+
+                        <label for="sexe_contact2">Sexe</label>
+                        <input list="sexe" name="sexe_contact2" id="sexe_contact2" value="" data-clear-btn="true" data-mini="true">
+                        <datalist id="sexe">
+                            <option value="M">
+                            <option value="F">
+                        </datalist>
+
+                        <label for="date_naissance_contact2">Date de naissance</label>
+                        <input type="date" id="date_naissance_contact2">
+
+                        <label for="profession_contact2">Profession</label>
+                        <input type="text" name="profession_contact2" id="profession_contact2" value="" data-clear-btn="true" data-mini="true">
+
+                        <label for="lieu_travail_contact2">Lieu de travail</label>
+                        <input type="text" name="lieu_travail_contact2" id="lieu_travail_contact2" value="" data-clear-btn="true" data-mini="true"><br>
+
+                        <p>Résidence pour le suivi</p>
+                        <label for="maison_contact2">Maison</label>
+                        <input type="text" name="maison_contact2" id="maison_contact2" value="" data-clear-btn="true" data-mini="true">
+
+                        <label for="ville_contact2">Ville/Village</label>
+                        <input type="text" name="ville_contact2" id="ville_contact2" value="" data-clear-btn="true" data-mini="true">
+
+                        <label for="quartier_contact2">Quartier</label>
+                        <input type="text" name="quartier_contact2" id="quartier_contact2" value="" data-clear-btn="true" data-mini="true">
+
+                        <label for="region_contact2">Région</label>
+                        <input type="text" name="region_contact2" id="region_contact2" value="" data-clear-btn="true" data-mini="true">
+
+                        <label for="tel1_contact2">Téléphone</label>
+                        <input type="text" name="tel1_contact2" id="tel1_contact2" value="" data-clear-btn="true" data-mini="true">
+
+                        <label for="tel2_contact2">Téléphone</label>
+                        <input type="text" name="tel2_contact2" id="tel2_contact2" value="" data-clear-btn="true" data-mini="true">
+
+                        <p>Situation immunologique</p>
+                        <label for="vaccine_ebola_contact2">Vaciné(e) Ebola</label>
+                        <input list="vaccine" name="vaccine_ebola_contact2" id="vaccine_ebola_contact2" value="" data-clear-btn="true" data-mini="true">
+                        <datalist id="vaccine">
+                            <option value="Oui">
+                            <option value="Non">
+                        </datalist><br><br>
+
+                        <fieldset data-role="controlgroup" data-type="horizontal">
+                            <input type="reset" name="bouton_reset" value="Tout Effacer" data-icon="delete" data-iconpos="right">
+                            <input type="submit" name="bouton_save" value="Enregistrer le nouveau contact" data-icon="check" data-iconpos="right" onclick="document.location.href='coordonnees.html'">
+                            <!-- coder 1 fonction pour enregistrer les données -->
+                        </fieldset>
+                    </div>
+                </form>
+            </div><!-- /content -->
+        </div><!-- /page -->
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="lib/fastclick/fastclick.min.js"></script>
+        <script src="lib/jquery/2.1.1/jquery-2.1.1.min.js"></script>
+
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="lib/jqm/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </body>
 </html>
