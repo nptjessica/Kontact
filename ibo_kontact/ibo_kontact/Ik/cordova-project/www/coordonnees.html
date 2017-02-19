@@ -15,17 +15,24 @@
     </head>
 
     <body>
-        <div data-role="header" data-id="foo1" data-position="fixed">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="coordonnees.html" data-prefetch="true" class="ui-btn-active ui-state-persist" >Coordonnees</a></li>
-                    <li><a href="visite-onglet.html" data-prefetch="true">Visite</a></li>
-                    <li><a href="historique.html" data-prefetch="true">Historique</a></li>
-                </ul>
-            </div><!-- /navbar -->
-        </div><!-- /footer -->
+    <div data-role="header" data-theme="c" data-position="fixed">
+        <a href="#page-index" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+        <h1>Ibo Kontact</h1>
+    </div><!-- /header -->
 
-        <div data-role="main" class="ui-content">
+    <div data-role="header" data-id="foo1">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="coordonnees.html" data-prefetch="true" class="ui-btn-active ui-state-persist">Coordonnees</a></li>
+                <li><a href="visite-onglet.html" data-prefetch="true">Visite</a></li>
+                <li><a href="historique.html" data-prefetch="true">Historique</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div><!-- /footer -->
+
+
+
+    <div data-role="main" class="ui-content">
             <!-- Données de "Source du contact" proviennent de la BD renseigné par les investigateurs
             Données non modifiables par l'utilisateur -->
             <label>Nom</label>

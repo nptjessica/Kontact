@@ -67,7 +67,8 @@ h3.bi-text-danger  {
     text-overflow: ellipsis;
 }
 
-/*dans l'onglet Historique, met en forme les onglets Visite, Medical, Viste/Medical*/
+/*dans l'onglet Historique*/
+/*met en forme les onglets Visite, Medical, Viste/Medical*/
 ul.tab {
     list-style-type: none;
     margin: 0;

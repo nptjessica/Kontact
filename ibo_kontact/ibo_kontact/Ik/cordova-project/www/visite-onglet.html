@@ -1,189 +1,304 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
 
-    <link href="css/themes/2/bookit.min.css" rel="stylesheet" />
-    <link href="css/themes/2/jquery.mobile.icons.min.css" rel="stylesheet" />
-    <link href="lib/jqm/1.4.5/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="css/app.css" />
-    <title>Ibo Kontact</title>
-</head>
- 
-        <script>
-                //selon le bouton choisi, champ1 est affiché
-                // alors que champ2 et champ3 reste caché
-                function afficher(btn,champ1,champ2,champ3)
-                {
-                    if (btn.checked)
-                   {
-                        document.getElementById(champ1).style.display="inline";
-                        document.getElementById(champ2).style.display="none";
-                        document.getElementById(champ3).style.display="none";
-                   }
-                }
+        <link href="css/themes/2/bookit.min.css" rel="stylesheet" />
+        <link href="css/themes/2/jquery.mobile.icons.min.css" rel="stylesheet" />
+        <link href="lib/jqm/1.4.5/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+        <title>Ibo Kontact</title>
+    </head>
 
-                //affiche le texte par défaut
-                function onBlur(el)
-                {
-                   if (el.value == '') el.value = el.defaultValue;
-                }
-                //supprime le texte par défaut
-                function onFocus(el)
-                {
-                    if (el.value == el.defaultValue) el.value = '';
-                }
-                </script>
+    <body>
+        <div data-role="page" id="page-oui-non">
+            <div data-role="header" data-theme="c" data-position="fixed">
+                <a href="index.html" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+                <h1>Ibo Kontact</h1>
+            </div><!-- /header -->
 
-<body>
-         
-         
+            <div data-role="header" data-id="foo1">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="coordonnees.html" data-prefetch="true">Coordonnees</a></li>
+                        <li><a href="visite-onglet.html" data-prefetch="true" class="ui-btn-active ui-state-persist">Visite</a></li>
+                        <li><a href="historique.html" data-prefetch="true">Historique</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
 
-     <div data-role="header" data-id="foo1" data-position="fixed">
-    <div data-role="navbar">
-        <ul>
-            <li><a href="coordonnees.html" data-prefetch="true" class="ui-btn-active ui-state-persist " >Coordonnees</a></li>
-            <li><a href="visite.html" data-prefetch="true" class="ui-btn-active ui-state-persist ">Visite</a></li>
-            <li><a href="historique.html" data-prefetch="true">Historique</a></li>
-            
-        </ul>
-    </div><!-- /navbar -->
-</div><!-- /footer -->
+            <div data-role="main" class="ui-content">
+                <h3>A la maison a ce jour</h3>
+                <div id="ctn-err" class="bi-invisible"></div>
+                <a href="#oui" data-transition="slide" class="ui-btn ui-btn-g ui-corner-all bi-top-margin-1-5" >oui</a>
+                <a href="#non" data-transition="slide" class="ui-btn ui-btn-r ui-corner-all bi-top-margin-1-5">non</a>
+            </div><!-- /content -->
+        </div><!-- /page -->
 
-<div data-role="page" id="page-oui-non">
-        <div data-role="header" data-theme="c" data-position="fixed">
-            <a href="#page-index" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
-            <h1>Ibo Kontact</h1>
-        </div><!-- /header -->
-        <div role="main" class="ui-content">
-            <h3>A la maison a ce jour</h3>
-            <div id="ctn-err" class="bi-invisible"></div>             
-            <a href="#oui" data-transition="slide" class="ui-btn ui-btn-g ui-corner-all bi-top-margin-1-5" >oui</a>
-            <a href="#non" data-transition="slide" class="ui-btn ui-btn-r ui-corner-all bi-top-margin-1-5">non</a>
-            
-             
-        </div><!-- /content -->
-    </div><!-- /page -->
+        <div data-role="page" id="non" class="ui-field-contain" data-type="horizontal">
+            <div data-role="header" data-theme="c" data-position="fixed">
+                <a href="#page-index" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+                <h1>Ibo Kontact</h1>
+            </div><!-- /header -->
 
+            <div data-role="header" data-id="foo1">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="coordonnees.html" data-prefetch="true">Coordonnees</a></li>
+                        <li><a href="visite-onglet.html" data-prefetch="true" class="ui-btn-active ui-state-persist">Visite</a></li>
+                        <li><a href="historique.html" data-prefetch="true">Historique</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
 
+            <div data-role="main" class="ui-content">
+                <h3>A la maison a ce jour: <span>NON</span></h3>
+                <label for="mov1">En déplacement</label>
+                <input type="radio" name="raison_maison_non" id="mov1" onclick="afficher(this,'infos_mov1','infos_mov2','infos_mov3');">
+                <form id="infos_mov1" method="POST" style="display:none">
+                    <div id="raison_deplacement">
+                        <input list="raison" name="raison_deplacement" value="Raison du déplacement" data-clear-btn="true" onblur="afficherTexte(this)" onfocus="supprimerTexte(this)">
+                        <datalist id="raison">
+                            <option value="Non indiquée">
+                        </datalist>
+                    </div>
 
-    <div data-role="page" id="non" class="ui-field-contain" data-type="horizontal">
-        <div data-role="header" data-theme="c" data-position="fixed">
-            <a href="#page-index" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
-            <h1>Ibo Kontact</h1>
-        </div><!-- /header -->
-            <h3>A la maison a ce jour: NON </h3>
-            <label for="mov1">En déplacement</label>
-            <input type="radio" name="raison_maison_non" id="mov1" onclick="afficher(this,'infos_mov1','infos_mov2','infos_mov3');">
-            <form id="infos_mov1" style="display:none">
-                <input type="text" id="raison_deplacement" value="Raison du déplacement" onblur="onBlur(this)" onfocus="onFocus(this)">
+                    <div id="adresse_actuelle">
+                        <input list="adresse" name="adresse_actuelle" value="Ville/Village + Quartier + Maison" data-clear-btn="true" onblur="afficherTexte(this)" onfocus="supprimerTexte(this)">
+                        <datalist id="adresse">
+                            <option value="Non indiquée">
+                        </datalist>
+                    </div>
 
-                <div id="adresse_actuelle">
-                    <input list="adresse" name="adresse_actuelle" value="Ville/Village + Quartier + Maison" onblur="onBlur(this)" onfocus="onFocus(this)">
-                    <datalist id="adresse">
-                        <option value="Non indiquée">
-                    </datalist>
-                </div><br>
+                    <label for="date_depart">Date de départ</label>
+                    <input type="date" id="date_depart">
 
-                <label for="date_depart">Date de départ</label>
-                <input type="date" id="date_depart"><br>
+                    <label for="date_retour">Date de retour</label>
+                    <input type="date" id="date_retour">
 
-                <label for="date_retour">Date de retour</label>
-                <input type="date" id="date_retour"><br>
+                    <div data-role="main" class="ui-content">
+                        <fieldset data-role="controlgroup" data-type="horizontal">
+                            <input type="reset" name="bouton_reset" value="Tout Effacer" data-icon="delete" data-iconpos="right">
+                            <input type="submit" name="bouton_save" value="Enregistrer" data-icon="check" data-iconpos="right" onclick="redirectConfirmationEnregistrement();">
+                        </fieldset>
+                    </div>
+                </form>
 
-                <div data-role="main" class="ui-content">
-                    <fieldset data-role="controlgroup" data-type="horizontal">
-                        <input type="reset" name="bouton_reset" value="Tout Effacer">
-                        <input type="button" name="bouton_save" value="Enregistrer" onclick="document.location.href='#pageConfirmationEnregistrement'">
-                    </fieldset>
-                </div>
-            </form>
+                <label for="mov2">Perdu de vue</label>
+                <input type="radio" name="raison_maison_non" id="mov2" onclick="afficher(this,'infos_mov2','infos_mov1','infos_mov3');">
+                <form id="infos_mov2" method="POST" style="display:none">
+                    <div id="lieu_probable">
+                        <input list="lieu" name="lieu_probable" value="Lieu probable" data-clear-btn="true" onblur="afficherTexte(this)" onfocus="supprimerTexte(this)">
+                        <datalist id="lieu">
+                            <option value="Non indiquée">
+                        </datalist>
+                    </div>
 
-            <label for="mov2">Perdu de vue</label>
-            <input type="radio" name="raison_maison_non" id="mov2" onclick="afficher(this,'infos_mov2','infos_mov1','infos_mov3');">
-            <form id="infos_mov2" style="display:none">
-                <div id="lieu_probable">
-                    <input list="lieu" name="lieu_probable" value="Lieu probable" onblur="onBlur(this)" onfocus="onFocus(this)">
-                    <datalist id="lieu">
-                        <option value="Non indiquée">
-                    </datalist>
-                </div><br>
+                    <div id="quartier_probable">
+                        <input list="quartier" name="quartier_probable" value="Quartier probable" data-clear-btn="true" onblur="afficherTexte(this)" onfocus="supprimerTexte(this)">
+                        <datalist id="quartier">
+                            <option value="Non indiquée">
+                        </datalist>
+                    </div>
 
-                <div id="quartier_probable">
-                    <input list="quartier" name="quartier_probable" value="Quartier probable" onblur="onBlur(this)" onfocus="onFocus(this)">
-                    <datalist id="quartier">
-                        <option value="Non indiquée">
-                    </datalist>
-                </div><br>
+                    <div id="ville_probable">
+                        <input list="ville" name="ville_probable" value="Ville probable" data-clear-btn="true" onblur="afficherTexte(this)" onfocus="supprimerTexte(this)">
+                        <datalist id="ville">
+                            <option value="Non indiquée">
+                        </datalist>
+                    </div>
 
-                <div id="ville_probable">
-                    <input list="ville" name="ville_probable" value="Ville probable" onblur="onBlur(this)" onfocus="onFocus(this)">
-                    <datalist id="ville">
-                        <option value="Non indiquée">
-                    </datalist>
-                </div><br>
+                    <div id="contact_probable">
+                        <input list="contact" name="contact_probable" value="Contact probable" data-clear-btn="true" onblur="afficherTexte(this)" onfocus="supprimerTexte(this)">
+                        <datalist id="contact">
+                            <option value="Non indiquée">
+                        </datalist>
+                    </div>
 
-                <div id="contact_probable">
-                    <input list="contact" name="contact_probable" value="Contact probable" onblur="onBlur(this)" onfocus="onFocus(this)">
-                    <datalist id="contact">
-                        <option value="Non indiquée">
-                    </datalist>
-                </div><br>
+                    <div data-role="main" class="ui-content">
+                        <fieldset data-role="controlgroup" data-type="horizontal">
+                            <input type="reset" name="bouton_reset" value="Tout Effacer" data-icon="delete" data-iconpos="right">
+                            <input type="submit" name="bouton_save" value="Enregistrer" data-icon="check" data-iconpos="right" onclick="redirectConfirmationEnregistrement();">
+                        </fieldset>
+                    </div>
+                </form>
 
-                <div data-role="main" class="ui-content">
-                    <fieldset data-role="controlgroup" data-type="horizontal">
-                        <input type="reset" name="bouton_reset" value="Tout Effacer">
-                        <input type="submit" name="bouton_save" value="Enregistrer" onclick="document.location.href='#pageConfirmationEnregistrement'">
-                    </fieldset>
-                </div>
-            </form>
+                <label for="mov3">Décédé(e)</label>
+                <input type="radio" name="raison_maison_non" id="mov3" onclick="afficher(this,'infos_mov3','infos_mov1','infos_mov2');">
+                <form id="infos_mov3" method="POST" style="display:none">
+                    <div class="ui-field-contain">
+                        <label for="date_deces">Date de décès</label>
+                        <input type="date" id="date_deces">
+                    </div>
 
-            <label for="mov3">Décédé(e)</label>
-            <input type="radio" name="raison_maison_non" id="mov3" onclick="afficher(this,'infos_mov3','infos_mov1','infos_mov2');">
-            <form id="infos_mov3" style="display:none">
-                <label for="date_deces">Date de décès</label>
-                <input type="date" id="date_deces">
+                    <label>Lieu de décès</label>
+                    <label for="deces_domicile">Docimile</label>
+                    <input type="radio" name="deces_lieu" id="deces_domicile" onclick="afficher(this,'deces_domicile','deces_choix_centre','deces_autre_centre');">
 
-                <label>Lieu de décès</label>
-                <label for="deces_domicile">Domicile</label>
-                <input type="radio" id="deces_domicile" class="ui-field-contain">
-                <label for="deces_centre">Centre de santé</label>
-                <input type="radio" id="deces_centre" class="ui-field-contain" onclick="afficher(this,'deces_choix_centre','infos_mov1','infos_mov2');">
-                <div id="deces_choix_centre" style="display:none">
-                    <input list="liste_centres" name="liste_centre">
-                    <datalist id="liste_centres">
-                        <option value="1 centre de la région"> <!-- coder la récupération des centres de la région -->
-                    </datalist>
-                </div>
-                <label for="deces_autre_lieu">Autre lieu</label>
-                <input type="text" id="deces_autre_lieu" value="précisez" onblur="onBlur(this)" onfocus="onFocus(this)">
+                    <label for="deces_centre">Centre de santé</label>
+                    <input type="radio" name="deces_lieu" id="deces_centre" onclick="afficher(this,'deces_choix_centre','deces_domicile','deces_autre_centre');">
+                    <div id="deces_choix_centre" style="display:none">
+                        <input list="liste_centres" name="liste_centre" data-clear-btn="true" >
+                        <datalist id="liste_centres">
+                            <option value="1 centre de la région">
+                                <!-- coder la récupération des centres de la région -->
+                        </datalist>
+                    </div>
 
-                <div data-role="main" class="ui-content">
-                    <fieldset data-role="controlgroup" data-type="horizontal">
-                        <input type="reset" name="bouton_reset" value="Tout Effacer">
-                        <input type="submit" name="bouton_save" value="Enregistrer" onclick="document.location.href='#pageConfirmationEnregistrement'">
-                        <!-- coder 1 fonction pour enregistrer les données -->
-                    </fieldset>
-                </div>
-            </form>
+                    <label for="deces_autre_lieu">Autre lieu</label>
+                    <input type="radio" name="deces_lieu" id="deces_autre_lieu" onclick="afficher(this,'deces_autre_centre','deces_domicile','deces_choix_centre');">
+                    <div id="deces_autre_centre" style="display:none">
+                        <input type="text" name="deces_lieu" id="deces_autre_lieu_precisez" value="précisez" data-clear-btn="true" onblur="afficherTexte(this)" onfocus="supprimerTexte(this)">
+                    </div>
+
+                    <div data-role="main" class="ui-content">
+                        <fieldset data-role="controlgroup" data-type="horizontal">
+                            <input type="reset" name="bouton_reset" value="Tout Effacer" data-icon="delete" data-iconpos="right">
+                            <input type="submit" name="bouton_save" value="Enregistrer" data-icon="check" data-iconpos="right" onclick="redirectConfirmationEnregistrement();">
+                            <!-- coder 1 fonction pour enregistrer les données -->
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
         </div>
 
- 
-    
-    <script type="text/javascript" src="cordova.js"></script>
-    <script src="lib/fastclick/fastclick.min.js"></script>
-    <script src="lib/jquery/2.1.1/jquery-2.1.1.min.js"></script>
-     
-    <script type="text/javascript" src="js/index.js"></script>
-    <script src="lib/jqm/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script type="text/javascript">
-     
-    </script>
+        <!--
+            Cf. CDC une fois que l'utilisateur clique sur le bouton "Oui" de la page "A la maison?", il est redirigé vers l'écran de confirmation "enregistrement des données"
+            mais il doit après aller sur la page Autres observation et pour terminer la page Confirmation enregistrement
+            C'est pourquoi j'ai crée 2 pages d'enregistrements (pageOui et pageConfirmationEnregistrement).
+            Jessica
+            -->
+        <div data-role="page" id="oui" class="ui-field-contain">
+            <div data-role="header" data-theme="c" data-position="fixed">
+                <a href="#page-index" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+                <h1>Ibo Kontact</h1>
+            </div><!-- /header -->
 
-</body>
+            <div data-role="header" data-id="foo1">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="coordonnees.html" data-prefetch="true">Coordonnees</a></li>
+                        <li><a href="visite-onglet.html" data-prefetch="true" class="ui-btn-active ui-state-persist">Visite</a></li>
+                        <li><a href="historique.html" data-prefetch="true">Historique</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+
+            <div data-role="main" class="ui-content">
+                <h3>A la maison a ce jour: <span>OUI</span></h3>
+                <form method="POST">
+
+                    <table>
+                        <tr>
+                            <td>Etat moral</td>
+                            <td><input type="image" name="moral" src="img/smiling.png" width="auto%" height="75%"></td>
+                            <td><input type="image" name="moral" src="img/sad.png" width="auto%" height="75%"></td>
+                            <td><input type="image" name="moral" src="img/unhappy.png" width="auto%" height="75%"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Etat physique</td>
+                            <td><input type="image" name="physique" src="img/smiling.png" width="auto" height="75%"></td>
+                            <td><input type="image" name="physique" src="img/sad.png" width="auto" height="75%"></td>
+                            <td><input type="image" name="physique" src="img/unhappy.png" width="auto" height="75%"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Code patient</td>
+                            <td><button>1<br><img name="code-patient" src="img/ice-cream-cone.png" width="50%" height="50%"></button></td>
+                            <td><button>2<br><img name="code-patient" src="img/sun-glasses.png" width="50%" height="50%"></button></td>
+                            <td><button>3<br><img name="code-patient" src="img/old-phone.png" width="50%" height="50%"></button></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td><button>4<br><img name="code-patient" src="img/dog.png" width="50%" height="50%"></button></td>
+                            <td><button>5<br><img name="code-patient" src="img/dices.png" width="50%" height="50%"></button></td>
+                            <td><button>6<br><img name="code-patient" src="img/flower.png" width="50%" height="50%"></button></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td><button>7<br><img name="code-patient" src="img/scissors.png" width="50%" height="50%"></button></td>
+                            <td><button>8<br><img name="code-patient" src="img/football.png" width="50%" height="50%"></button></td>
+                            <td><button>9<br><img name="code-patient" src="img/sun.png" width="50%" height="50%"></button></td>
+                        </tr>
+                    </table>
+
+                    <input type="submit" name="bouton_save" value="Enregistrer les données" data-icon="check" data-iconpos="right" onclick="document.location.href='#autres-observations'">
+                    <!-- créer 1 fonction enregistrer les données -->
+                </form>
+            </div>
+        </div>
+
+        <div data-role="page" id="autres-observations" class="ui-field-contain">
+            <div data-role="header" data-theme="c" data-position="fixed">
+                <a href="#page-index" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+                <h1>Ibo Kontact</h1>
+            </div><!-- /header -->
+
+            <div data-role="header" data-id="foo1">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="coordonnees.html" data-prefetch="true">Coordonnees</a></li>
+                        <li><a href="visite-onglet.html" data-prefetch="true" class="ui-btn-active ui-state-persist">Visite</a></li>
+                        <li><a href="historique.html" data-prefetch="true">Historique</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+
+            <div data-role="main" class="ui-content">
+                <h3>Autres observations</h3>
+                <input type="checkbox" name="reticences_famille" id="ReticencesFamille" value="Reticences dans la famille">
+                <label for = "ReticencesFamille">Réticences dans la famille</label>
+                <input type="checkbox" name="reticences_quartier" id="ReticencesQuartier" value="Reticences dans le quartier">
+                <label for = "ReticencesQuartier">Réticences dans le quartier</label><br>
+                <label>Commentaires</label>
+                <textarea name="commentaires" rows="10" cols="30"></textarea><br>
+                <input type="submit" name="bouton_save" value="Enregistrer les données" data-icon="check" data-iconpos="right" onclick="redirectConfirmationEnregistrement();">
+                <!-- coder 1 fonction pour enregistrer les données -->
+            </div>
+        </div>
+
+        <div data-role="page" id="confirmation-enregistrement" class="ui-field-contain">
+            <div data-role="header" data-theme="c" data-position="fixed">
+                <a href="#page-index" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+                <h1>Ibo Kontact</h1>
+            </div><!-- /header -->
+
+            <div data-role="header" data-id="foo1">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="coordonnees.html" data-prefetch="true">Coordonnees</a></li>
+                        <li><a href="visite-onglet.html" data-prefetch="true" class="ui-btn-active ui-state-persist">Visite</a></li>
+                        <li><a href="historique.html" data-prefetch="true">Historique</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+
+            <div data-role="main" class="ui-content">
+                <p>Les informations ont bien été enregistrées</p>
+                <!-- coder 1 fonction pour enregistrer les données -->
+                <a href="visite-du-jour.html" data-transition="slide" class="ui-btn ui-corner-all">Retour à la liste des visites</a>
+                <a href="menu.html" data-transition="slide" class="ui-btn ui-corner-all">Retour à l'Accueil</a>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="lib/fastclick/fastclick.min.js"></script>
+        <script src="lib/jquery/2.1.1/jquery-2.1.1.min.js"></script>
+
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="lib/jqm/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript">
+            $("#loadJson").click(loadJson);
+        </script>
+
+
+    </body>
 </html>
