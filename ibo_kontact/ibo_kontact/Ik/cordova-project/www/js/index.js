@@ -130,6 +130,18 @@ function redirectConfirmationEnregistrement(){
     document.location.href='#confirmation-enregistrement';
 }
 
+//dans la page Perdu de Vue, filtre la liste "Visite du jour" pour obtenir la page Perdu de Vue
+function perduDeVueFilte(){
+    var personneContact = document.getElementsByClassName("personneContact");
+    var joursSuivi = document.getElementsByClassName("jourSuivi");
+    //var nombreJours = compteur();
+    for(var i = 0; i < personneContact.length; i++){
+        if(joursSuivi[i].innerHTML >= "J+<span class=\"nombreJours\">1</span>"){
+            document.getElementById("listePerdu").innerHTML += '<li data-icon="false" class="personnePerdu">'+ personneContact[i].innerHTML + "</li>";
+        }
+    }
+ }
+
 //dans l'onglet Historique, affiche les div correspondant aux onglets Visite, Medical, Viste/Medical
 function openOnglet(evt, nomOnglet) {
     var tabcontent = document.getElementsByClassName("tabcontent");
