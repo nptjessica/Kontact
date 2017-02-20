@@ -102,3 +102,58 @@ $(document).delegate("#page-bookings", "pagebeforecreate", function () {
     //});
     
 });
+
+
+//dans l'onglet Visite (visite-onglet.html), à la page "A la maison ce jour" (id="non")
+//selon le bouton choisi, champ1 est affiché alors que champ2 et champ3 reste caché
+function afficher(btn,champ1,champ2,champ3){
+    if (btn.checked)
+   {
+        document.getElementById(champ1).style.display="inline";
+        document.getElementById(champ2).style.display="none";
+        document.getElementById(champ3).style.display="none";
+   }
+}
+
+//dans les inputs, affiche le texte par défaut
+function afficherTexte(input){
+if (input.value == '') input.value = input.defaultValue;
+}
+
+//dans les inputs, supprime le texte par défaut
+function supprimerTexte(input){
+    if (input.value == input.defaultValue) input.value = '';
+}
+
+//redirige vers la page Confirmation Enregistrement (id="confirmation-enregistrement")
+function redirectConfirmationEnregistrement(){
+    document.location.href='#confirmation-enregistrement';
+}
+
+//dans la page Perdu de Vue, filtre la liste "Visite du jour" pour obtenir la page Perdu de Vue
+function perduDeVueFilte(){
+    var personneContact = document.getElementsByClassName("personneContact");
+    var joursSuivi = document.getElementsByClassName("jourSuivi");
+    //var nombreJours = compteur();
+    for(var i = 0; i < personneContact.length; i++){
+        if(joursSuivi[i].innerHTML >= "J+<span class=\"nombreJours\">1</span>"){
+            document.getElementById("listePerdu").innerHTML += '<li data-icon="false" class="personnePerdu">'+ personneContact[i].innerHTML + "</li>";
+        }
+    }
+ }
+
+//dans l'onglet Historique, affiche les div correspondant aux onglets Visite, Medical, Viste/Medical
+function openOnglet(evt, nomOnglet) {
+    var tabcontent = document.getElementsByClassName("tabcontent");
+    var tablinks = document.getElementsByClassName("tablinks");
+    for (var i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(nomOnglet).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
