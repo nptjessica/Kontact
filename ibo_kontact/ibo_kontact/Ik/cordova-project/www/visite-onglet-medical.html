@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+
+        <link href="css/themes/2/bookit.min.css" rel="stylesheet" />
+        <link href="css/themes/2/jquery.mobile.icons.min.css" rel="stylesheet" />
+        <link href="lib/jqm/1.4.5/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+        <title>Ibo Kontact</title>
+    </head>
+
+    <body>
+        <div data-role="page" id="page-oui-non-medical">
+            <div data-role="header" data-theme="c" data-position="fixed">
+                <a href="menu-medical.html" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+                <h1>Ibo Kontact</h1>
+            </div><!-- /header -->
+
+            <div data-role="header" data-id="foo1">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="coordonnees-medical.html" data-prefetch="true">Coordonnees</a></li>
+                        <li><a href="visite-onglet-medical.html" data-prefetch="true" class="ui-btn-active ui-state-persist">Visite</a></li>
+                        <li><a href="historique-medical.html" data-prefetch="true">Historique</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+
+            <div data-role="main" class="ui-content">
+                <h3>A la maison a ce jour</h3>
+                <div id="ctn-err" class="bi-invisible"></div>
+                <a href="#oui-medical" data-transition="slide" id="maison-oui" class="ui-btn ui-btn-g ui-corner-all bi-top-margin-1-5" >oui</a>
+                <a href="#non-medical" data-transition="slide" id="maison-non" class="ui-btn ui-btn-r ui-corner-all bi-top-margin-1-5">non</a>
+            </div><!-- /content -->
+        </div><!-- /page -->
+
+        <div data-role="page" id="non-medical" class="ui-field-contain" data-type="horizontal">
+            <div data-role="header" data-theme="c" data-position="fixed">
+                <a href="menu-medical.html" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+                <h1>Ibo Kontact</h1>
+            </div><!-- /header -->
+
+            <div data-role="header" data-id="foo1">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="coordonnees-medical.html" data-prefetch="true">Coordonnees</a></li>
+                        <li><a href="visite-onglet-medical.html" data-prefetch="true" class="ui-btn-active ui-state-persist">Visite</a></li>
+                        <li><a href="historique-medical.html" data-prefetch="true">Historique</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+
+            <div data-role="main" class="ui-content">
+                <h3>A la maison a ce jour: <span>NON</span></h3>
+                <label for="mov1">En déplacement</label>
+                <input type="radio" name="raison_maison_non" id="mov1" onclick="afficher(this,'infos_mov1','infos_mov2','infos_mov3');">
+                <form id="infos_mov1" method="POST" style="display:none">
+                    <div id="raison_deplacement">
+                        <input list="raison" name="raison_deplacement" value="Raison du déplacement" data-clear-btn="true" onblur="afficherTexte(this)" onfocus="supprimerTexte(this)">
+                        <datalist id="raison">
+                            <option value="Non indiquée">
+                        </datalist>
+                    </div>
+
+                    <div id="adresse_actuelle">
+                        <input list="adresse" name="adresse_actuelle" value="Ville/Village + Quartier + Maison" data-clear-btn="true" onblur="afficherTexte(this)" onfocus="supprimerTexte(this)">
+                        <datalist id="adresse">
+                            <option value="Non indiquée">
+                        </datalist>
+                    </div>
+
+                    <label for="date_depart">Date de départ</label>
+                    <input type="date" id="date_depart">
+
+                    <label for="date_retour">Date de retour</label>
+                    <input type="date" id="date_retour">
+
+                    <div data-role="main" class="ui-content">
+                        <fieldset data-role="controlgroup" data-type="horizontal">
+                            <input type="reset" name="bouton_reset" value="Tout Effacer" data-icon="delete" data-iconpos="right">
+                            <input type="submit" name="bouton_save" value="Enregistrer" data-icon="check" data-iconpos="right" onclick="redirectConfirmationEnregistrementMedical();">
+                        </fieldset>
+                    </div>
+                </form>
+
+                <label for="mov2">Perdu de vue</label>
+                <input type="radio" name="raison_maison_non" id="mov2" onclick="afficher(this,'infos_mov2','infos_mov1','infos_mov3');">
+                <form id="infos_mov2" method="POST" style="display:none">
+                    <div id="lieu_probable">
+                        <input list="lieu" name="lieu_probable" value="Lieu probable" data-clear-btn="true" onblur="afficherTexte(this)" onfocus="supprimerTexte(this)">
+                        <datalist id="lieu">
+                            <option value="Non indiquée">
+                        </datalist>
+                    </div>
+
+                    <div id="quartier_probable">
+                        <input list="quartier" name="quartier_probable" value="Quartier probable" data-clear-btn="true" onblur="afficherTexte(this)" onfocus="supprimerTexte(this)">
+                        <datalist id="quartier">
+                            <option value="Non indiquée">
+                        </datalist>
+                    </div>
+
+                    <div id="ville_probable">
+                        <input list="ville" name="ville_probable" value="Ville probable" data-clear-btn="true" onblur="afficherTexte(this)" onfocus="supprimerTexte(this)">
+                        <datalist id="ville">
+                            <option value="Non indiquée">
+                        </datalist>
+                    </div>
+
+                    <div id="contact_probable">
+                        <input list="contact" name="contact_probable" value="Contact probable" data-clear-btn="true" onblur="afficherTexte(this)" onfocus="supprimerTexte(this)">
+                        <datalist id="contact">
+                            <option value="Non indiquée">
+                        </datalist>
+                    </div>
+
+                    <div data-role="main" class="ui-content">
+                        <fieldset data-role="controlgroup" data-type="horizontal">
+                            <input type="reset" name="bouton_reset" value="Tout Effacer" data-icon="delete" data-iconpos="right">
+                            <input type="submit" name="bouton_save" value="Enregistrer" data-icon="check" data-iconpos="right" onclick="redirectConfirmationEnregistrementMedical();">
+                        </fieldset>
+                    </div>
+                </form>
+
+                <label for="mov3">Décédé(e)</label>
+                <input type="radio" name="raison_maison_non" id="mov3" onclick="afficher(this,'infos_mov3','infos_mov1','infos_mov2');">
+                <form id="infos_mov3" method="POST" style="display:none">
+                    <div class="ui-field-contain">
+                        <label for="date_deces">Date de décès</label>
+                        <input type="date" id="date_deces">
+                    </div>
+
+                    <label>Lieu de décès</label>
+                    <label for="deces_domicile">Docimile</label>
+                    <input type="radio" name="deces_lieu" id="deces_domicile" onclick="afficher(this,'deces_domicile','deces_choix_centre','deces_autre_centre');">
+
+                    <label for="deces_centre">Centre de santé</label>
+                    <input type="radio" name="deces_lieu" id="deces_centre" onclick="afficher(this,'deces_choix_centre','deces_domicile','deces_autre_centre');">
+                    <div id="deces_choix_centre" style="display:none">
+                        <input list="liste_centres" name="liste_centre" data-clear-btn="true" >
+                        <datalist id="liste_centres">
+                            <option value="1 centre de la région">
+                                <!-- coder la récupération des centres de la région -->
+                        </datalist>
+                    </div>
+
+                    <label for="deces_autre_lieu">Autre lieu</label>
+                    <input type="radio" name="deces_lieu" id="deces_autre_lieu" onclick="afficher(this,'deces_autre_centre','deces_domicile','deces_choix_centre');">
+                    <div id="deces_autre_centre" style="display:none">
+                        <input type="text" name="deces_lieu" id="deces_autre_lieu_precisez" value="précisez" data-clear-btn="true" onblur="afficherTexte(this)" onfocus="supprimerTexte(this)">
+                    </div>
+
+                    <div data-role="main" class="ui-content">
+                        <fieldset data-role="controlgroup" data-type="horizontal">
+                            <input type="reset" name="bouton_reset" value="Tout Effacer" data-icon="delete" data-iconpos="right">
+                            <input type="submit" name="bouton_save" value="Enregistrer" data-icon="check" data-iconpos="right" onclick="redirectConfirmationEnregistrementMedical();">
+                            <!-- coder 1 fonction pour enregistrer les données -->
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--
+            Cf. CDC une fois que l'utilisateur clique sur le bouton "Oui" de la page "A la maison?", il est redirigé vers l'écran de confirmation "enregistrement des données"
+            mais il doit après aller sur la page Autres observation et pour terminer la page Confirmation enregistrement
+            C'est pourquoi j'ai crée 2 pages d'enregistrements (pageOui et pageConfirmationEnregistrement).
+            Jessica
+            -->
+        <div data-role="page" id="oui-medical" class="ui-field-contain">
+            <div data-role="header" data-theme="c" data-position="fixed">
+                <a href="menu-medical.html" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+                <h1>Ibo Kontact</h1>
+            </div><!-- /header -->
+
+            <div data-role="header" data-id="foo1">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="coordonnees-medical.html" data-prefetch="true">Coordonnees</a></li>
+                        <li><a href="visite-onglet-medical.html" data-prefetch="true" class="ui-btn-active ui-state-persist">Visite</a></li>
+                        <li><a href="historique-medical.html" data-prefetch="true">Historique</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+
+            <div data-role="main" class="ui-content">
+                <h3>A la maison a ce jour: <span>OUI</span></h3>
+                <h4>Température du jour</h4>
+                <form id="temperature">
+                    <input type="text" id="valeurtemperature"><br>
+                    <div data-role="main" class="ui-content">
+                        <fieldset data-role="controlgroup" data-type="horizontal">
+                            <input type="reset" name="bouton_reset" value="Tout Effacer">
+                            <input type="button" name="bouton_save" value="Enregistrer">
+                            <!--cretion d une fonction qui enregistre les données -->
+                        </fieldset>
+                    </div>
+
+                    <h3>Présence de signes cliniques ?</h3>
+                    <div data-role="main" class="ui-content">
+                        <a href="#signes-cliniques" id="oui-signes" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline">Oui</a>
+                        <a href="#autres-observations-medical" id="non-signes" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline">Non</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div data-role="page" id="signes-cliniques" class="ui-field-contain">
+            <div data-role="header" data-theme="c" data-position="fixed">
+                <a href="menu-medical.html" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+                <h1>Ibo Kontact</h1>
+            </div><!-- /header -->
+
+            <div data-role="header" data-id="foo1">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="coordonnees-medical.html" data-prefetch="true">Coordonnees</a></li>
+                        <li><a href="visite-onglet-medical.html" data-prefetch="true" class="ui-btn-active ui-state-persist">Visite</a></li>
+                        <li><a href="historique-medical.html" data-prefetch="true">Historique</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+
+            <div data-role="main" class="ui-content">
+                <h3>Présente des signes cliniques</h3>
+                <label for="mov1">Liste signes cliniques</label>
+                <form>
+                    <!--recuperation des valeurs avec la base de données...-->
+                    <input type="checkbox" name="VN" id="VN"/><label for="VN">Vomissement ou nausées</label>
+                    <input type="checkbox" name="Diarrhée" id="Diarrhée"/><label for="Diarrhée">Diarrhée</label>
+                    <input type="checkbox" name="Fatigue intense" id="Fatigue intense"/><label for="Fatigue intense">Fatigue intense</label>
+                    <input type="checkbox" name="Ictère" id="Ictère"/><label for="Ictère">Ictère</label>
+                    <input type="checkbox" name="Myalgies" id="Myalgies"/><label for="Myalgies">Myalgies/arthralgies</label>
+                    <input type="checkbox" name="Céphalées" id="Céphalées"/><label for="Céphalées">Céphalées</label>
+                    <input type="checkbox" name="Difficultés respiratoires" id="Difficultés respiratoires"/><label  for="Difficultés respiratoires">Difficultés respiratoires</label>
+                    <input type="checkbox" name="Hoquets" id="Hoquets"/><label for="Hoquets">Hoquets</label>
+                    <label>Autre:</label>
+                    <input type="text" id="AutreSigneClinique"><br>
+                    <input type="submit" value="Enregistrer les données" class="ui-btn ui-corner-all ui-btn-inline" onclick="document.location.href='#pageConclusionSuiviMedical'">
+                </form>
+            </div>
+        </div>
+
+        <div data-role="page" id="conclusion-suivi" class="ui-field-contain">
+            <div data-role="header" data-theme="c" data-position="fixed">
+                <a href="menu-medical.html" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+                <h1>Ibo Kontact</h1>
+            </div><!-- /header -->
+
+            <div data-role="header" data-id="foo1">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="coordonnees-medical.html" data-prefetch="true">Coordonnees</a></li>
+                        <li><a href="visite-onglet-medical.html" data-prefetch="true" class="ui-btn-active ui-state-persist">Visite</a></li>
+                        <li><a href="historique-medical.html" data-prefetch="true">Historique</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+
+            <div data-role="main" class="ui-content">
+                <h3>Conclusion suivi médical</h3>
+                <h5>Transfert au centre de transit</h5>
+                <!-- le centre devra etre celui le plus proche -->
+                <label id="NomCentreTransit">Nom du centre</label>
+                <!-- Donnee recupere de la base de donnée -->
+                <label>N° de telephone</label>
+                <input type="submit" value="Enregistrer les données" class="ui-btn ui-corner-all ui-btn-inline" onclick="document.location.href='#autres-observations-medical'">
+            </div>
+        </div>
+
+        <div data-role="page" id="transfert-centre-medical" class="ui-field-contain">
+            <div data-role="header" data-theme="c" data-position="fixed">
+                <a href="menu-medical.html" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+                <h1>Ibo Kontact</h1>
+            </div><!-- /header -->
+
+            <div data-role="header" data-id="foo1">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="coordonnees-medical.html" data-prefetch="true">Coordonnees</a></li>
+                        <li><a href="visite-onglet-medical.html" data-prefetch="true" class="ui-btn-active ui-state-persist">Visite</a></li>
+                        <li><a href="historique-medical.html" data-prefetch="true">Historique</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+
+            <div data-role="main" class="ui-content">
+                <h3>Conclusion suivi médical</h3>
+                <h5>Transfert au centre de traitement pour examen</h5>
+                <!-- le centre devra etre celui le plus proche -->
+                <label id="NomCentreExamane">Nom du centre</label>
+                <!-- Donnee recupere de la base de donnée -->
+                <label>N° de telephone</label>
+                <input type="submit" value="Enregistrer les données" class="ui-btn ui-corner-all ui-btn-inline" onclick="document.location.href='#pageAutresObservations'">
+            </div>
+        </div>
+
+        <div data-role="page" id="fiche-centre" class="ui-field-contain">
+            <div data-role="header" data-theme="c" data-position="fixed">
+                <a href="menu-medical.html" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+                <h1>Ibo Kontact</h1>
+            </div><!-- /header -->
+
+            <div data-role="header" data-id="foo1">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="coordonnees-medical.html" data-prefetch="true">Coordonnees</a></li>
+                        <li><a href="visite-onglet-medical.html" data-prefetch="true" class="ui-btn-active ui-state-persist">Visite</a></li>
+                        <li><a href="historique-medical.html" data-prefetch="true">Historique</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+
+            <div data-role="main" class="ui-content">
+                <h4>Fiche Centre de traitement</h4>
+            </div>
+        </div>
+
+        <div data-role="page" id="autres-observations-medical" class="ui-field-contain">
+            <div data-role="header" data-theme="c" data-position="fixed">
+                <a href="menu-medical.html" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+                <h1>Ibo Kontact</h1>
+            </div><!-- /header -->
+
+            <div data-role="header" data-id="foo1">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="coordonnees-medical.html" data-prefetch="true">Coordonnees</a></li>
+                        <li><a href="visite-onglet-medical.html" data-prefetch="true" class="ui-btn-active ui-state-persist">Visite</a></li>
+                        <li><a href="historique-medical.html" data-prefetch="true">Historique</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+
+            <div data-role="main" class="ui-content">
+                <h3>Autres observations</h3>
+                <input type="checkbox" name="reticences_famille" id="ReticencesFamille" value="Reticences dans la famille">
+                <label for = "ReticencesFamille">Réticences dans la famille</label>
+                <input type="checkbox" name="reticences_quartier" id="ReticencesQuartier" value="Reticences dans le quartier">
+                <label for = "ReticencesQuartier">Réticences dans le quartier</label><br>
+                <label>Commentaires</label>
+                <textarea name="commentaires" rows="10" cols="30"></textarea><br>
+                <input type="submit" name="bouton_save" value="Enregistrer les données" data-icon="check" data-iconpos="right" onclick="redirectConfirmationEnregistrementMedical();">
+                <!-- coder 1 fonction pour enregistrer les données -->
+            </div>
+        </div>
+
+        <div data-role="page" id="confirmation-enregistrement-medical" class="ui-field-contain">
+            <div data-role="header" data-theme="c" data-position="fixed">
+                <a href="menu-medical.html" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+                <h1>Ibo Kontact</h1>
+            </div><!-- /header -->
+
+            <div data-role="header" data-id="foo1">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="coordonnees-medical.html" data-prefetch="true">Coordonnees</a></li>
+                        <li><a href="visite-onglet-medical.html" data-prefetch="true" class="ui-btn-active ui-state-persist">Visite</a></li>
+                        <li><a href="historique-medical.html" data-prefetch="true">Historique</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+
+            <div data-role="main" class="ui-content">
+                <p>Les informations ont bien été enregistrées</p>
+                <!-- coder 1 fonction pour enregistrer les données -->
+                <a href="visite-du-jour-medical.html" data-transition="slide" class="ui-btn ui-corner-all">Retour à la liste des visites</a>
+                <a href="menu-medical.html" data-transition="slide" class="ui-btn ui-corner-all">Retour à l'Accueil</a>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="lib/fastclick/fastclick.min.js"></script>
+        <script src="lib/jquery/2.1.1/jquery-2.1.1.min.js"></script>
+
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="lib/jqm/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript">
+            $("#loadJson").click(loadJson);
+        </script>
+    </body>
+</html>
