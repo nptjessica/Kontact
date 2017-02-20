@@ -157,3 +157,8 @@ function openOnglet(evt, nomOnglet) {
     evt.currentTarget.className += " active";
 }
 
+//interface Visiteur Médical
+//redirige vers la page Confirmation Enregistrement (id="confirmation-enregistrement")
+function redirectConfirmationEnregistrementMedical(){
+    document.location.href='#confirmation-enregistrement-medical';
+}

@@ -12,9 +12,11 @@ h1,h2,h3,h4,h5 {
     -webkit-border-radius: .3125em;
     border-radius: .3125em;
 }
+
 .ui-title {
     color:#fff;
 }
+
 .ui-listview>.ui-li-divider {
     border-top-color:#ccc;
 }
@@ -67,8 +69,9 @@ h3.bi-text-danger  {
     text-overflow: ellipsis;
 }
 
-/*dans l'onglet Historique*/
-/*met en forme les onglets Visite, Medical, Viste/Medical*/
+/*Visite/ Visite Médical
+onglet Historique
+met en forme les onglets Visite, Medical, Viste/Medical*/
 ul.tab {
     list-style-type: none;
     margin: 0;
@@ -118,4 +121,42 @@ ul.tab li a:focus, .active {
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+/*Visite/ Visite Médical
+onglet Visite
+page A la Maison ce jour*/
+#maison-oui{
+    color: white;
+    background-color:green;
+}
+
+#maison-non{
+    color: white;
+    background-color:red;
+}
+
+/*page A la Maison ce jour Non*/
+span.non{
+    color:red;
+}
+
+/*page A la Maison ce jour OUI*/
+span.oui{
+    color:green;
+}
+
+
+
+
+/*Visite Médical
+onglet Visite, page Température*/
+#oui-signes{
+    color: white;
+    background-color:green;
+}
+
+#non-signes{
+    color: white;
+    background-color:red;
 }

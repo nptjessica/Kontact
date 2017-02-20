@@ -32,10 +32,10 @@
             </div><!-- /footer -->
 
             <div data-role="main" class="ui-content">
-                <h3>A la maison a ce jour</h3>
+                <h3>A la maison ce jour</h3>
                 <div id="ctn-err" class="bi-invisible"></div>
-                <a href="#oui" data-transition="slide" class="ui-btn ui-btn-g ui-corner-all bi-top-margin-1-5" >oui</a>
-                <a href="#non" data-transition="slide" class="ui-btn ui-btn-r ui-corner-all bi-top-margin-1-5">non</a>
+                <a href="#oui" data-transition="slide" id="maison-oui" class="ui-btn ui-btn-g ui-corner-all bi-top-margin-1-5" >oui</a>
+                <a href="#non" data-transition="slide" id="maison-non" class="ui-btn ui-btn-r ui-corner-all bi-top-margin-1-5">non</a>
             </div><!-- /content -->
         </div><!-- /page -->
 
@@ -56,7 +56,7 @@
             </div><!-- /footer -->
 
             <div data-role="main" class="ui-content">
-                <h3>A la maison a ce jour: <span>NON</span></h3>
+                <h3>A la maison a ce jour: <span class="non">NON</span></h3>
                 <label for="mov1">En déplacement</label>
                 <input type="radio" name="raison_maison_non" id="mov1" onclick="afficher(this,'infos_mov1','infos_mov2','infos_mov3');">
                 <form id="infos_mov1" method="POST" style="display:none">
@@ -189,7 +189,7 @@
             </div><!-- /footer -->
 
             <div data-role="main" class="ui-content">
-                <h3>A la maison a ce jour: <span>OUI</span></h3>
+                <h3>A la maison a ce jour: <span class="oui">OUI</span></h3>
                 <form method="POST">
                     <label for="moral">Etat moral</label>
                     <fieldset id="moral" data-role="controlgroup" data-type="horizontal">
@@ -198,7 +198,7 @@
                         <input type="radio" id="moral-unhappy" name="radio" value="Mal"><label for="moral-unhappy"><img src="img/unhappy.png"/></label>
                     </fieldset>
 
-                    <label for="moral">Etat physique</label>
+                    <label for="moral" class="">Etat physique</label>
                     <fieldset id="physique" data-role="controlgroup" data-type="horizontal">
                         <input type="radio" id="physique-smiling" name="radio" value="Souriant"><label for="physique-smiling"><img src="img/smiling.png"/></label>
                         <input type="radio" id="physique-sad" name="radio" value="Triste"><label for="physique-sad"><img src="img/sad.png"/></label>
@@ -207,6 +207,8 @@
 
                     <table>
                         <tr>
+                            <td><input type="radio" id="moral-smilin" style="display:none" name="radio" value="Souriant"><label for="moral-smiling"><img src="img/smiling.png"/></label></td>
+                            <td><input type="radio" id="moral-smili" style="display:none" name="radio" value="Souriant"><label for="moral-smiling"><img src="img/sad.png"/></label></td>
                             <td>Code patient</td>
                             <td><button value="1">1<br><img src="img/ice-cream-cone.png" width="50%" height="50%"></button></td>
                             <td><button value="2">2<br><img src="img/sun-glasses.png" width="50%" height="50%"></button></td>
