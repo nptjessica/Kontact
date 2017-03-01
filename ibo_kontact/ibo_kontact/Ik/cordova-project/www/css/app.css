@@ -146,9 +146,6 @@ span.oui{
     color:green;
 }
 
-
-
-
 /*Visite Médical
 onglet Visite, page Température*/
 #oui-signes{
@@ -159,4 +156,11 @@ onglet Visite, page Température*/
 #non-signes{
     color: white;
     background-color:red;
+}
+
+/*Agent Investigation
+page Resultat de recherche
+afficher le signes permettant de trier le tableau des resultats de recherche*/
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+    content: " \25B4\25BE"
 }

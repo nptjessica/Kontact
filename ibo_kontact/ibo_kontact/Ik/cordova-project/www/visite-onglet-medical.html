@@ -32,7 +32,7 @@
             </div><!-- /footer -->
 
             <div data-role="main" class="ui-content">
-                <h3>A la maison a ce jour</h3>
+                <h3>A la maison ce jour</h3>
                 <div id="ctn-err" class="bi-invisible"></div>
                 <a href="#oui-medical" data-transition="slide" id="maison-oui" class="ui-btn ui-btn-g ui-corner-all bi-top-margin-1-5" >oui</a>
                 <a href="#non-medical" data-transition="slide" id="maison-non" class="ui-btn ui-btn-r ui-corner-all bi-top-margin-1-5">non</a>
@@ -56,7 +56,7 @@
             </div><!-- /footer -->
 
             <div data-role="main" class="ui-content">
-                <h3>A la maison a ce jour: <span>NON</span></h3>
+                <h3>A la maison ce jour: <span class="non">NON</span></h3>
                 <label for="mov1">En déplacement</label>
                 <input type="radio" name="raison_maison_non" id="mov1" onclick="afficher(this,'infos_mov1','infos_mov2','infos_mov3');">
                 <form id="infos_mov1" method="POST" style="display:none">
@@ -189,7 +189,7 @@
             </div><!-- /footer -->
 
             <div data-role="main" class="ui-content">
-                <h3>A la maison a ce jour: <span>OUI</span></h3>
+                <h3>A la maison a ce jour: <span class="oui">OUI</span></h3>
                 <h4>Température du jour</h4>
                 <form id="temperature">
                     <input type="text" id="valeurtemperature"><br>
@@ -241,7 +241,7 @@
                     <input type="checkbox" name="Hoquets" id="Hoquets"/><label for="Hoquets">Hoquets</label>
                     <label>Autre:</label>
                     <input type="text" id="AutreSigneClinique"><br>
-                    <input type="submit" value="Enregistrer les données" class="ui-btn ui-corner-all ui-btn-inline" onclick="document.location.href='#pageConclusionSuiviMedical'">
+                    <input type="submit" value="Enregistrer les données" class="ui-btn ui-corner-all ui-btn-inline" onclick="document.location.href='#conclusion-suivi'">
                 </form>
             </div>
         </div>

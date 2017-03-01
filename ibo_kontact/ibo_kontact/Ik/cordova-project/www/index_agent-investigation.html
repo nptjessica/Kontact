@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1; " charset=utf-8 />
-        <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+
+        <link href="css/themes/2/bookit.min.css" rel="stylesheet" />
+        <link href="css/themes/2/jquery.mobile.icons.min.css" rel="stylesheet" />
+        <link href="lib/jqm/1.4.5/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
         <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        <!-- //permet d'afficher le menu de navigation sur la page actuelle
-        <script id="panel-init">
+
+        <!-- permet d'afficher le menu de navigation sur la page actuelle -->
+        <script>
         $(function() {
             $( "body>[data-role='panel']" ).panel();
         });
         </script>
-        -->
+
+        <!-- A SUPPRIMER, lorsque les interfaces Superviseurs et Centre sont réalisés-->
         <!-- selon le bouton choisi, champ1 est affiché alors que champ2 et champ3 reste caché-->
         <script>
             function afficher(btn,champ1,champ2,champ3,champ4){
@@ -36,7 +46,7 @@
 
                 <li><a href="#pageStatistiques" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Statistiques</a></li>
                 <li><a href="#pageParametrage" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-gear">Paramétrage</a></li>
-                <li><input type="submit" value="Déconnexion" data-icon="delete"></li>
+                <li><input type="button" value="Déconnexion" data-icon="delete"></li>
             </ul>
         </div>
 
@@ -47,7 +57,7 @@
             </div>
 
             <div data-role="main" class="ui-content">
-                <form id="recherche" >
+                <form id="recherche-barre" >
                     <b>Recherche rapide. </b><i>La recherche s'effectue sir m'ensemble cas confirmés, cas probables, personnes contacts.</i>
                     <div class="ui-field-contain">
                         <label for="recherche_name">Nom</label>
@@ -56,15 +66,20 @@
                         <label for="recherche_prenom">Prénom</label>
                         <input type="text" name="reseach_prenom" id="recherche_prenom" data-inline="true">
 
-                        <input type="submit" name="bouton_recherche" value="Rechercher" data-icon="search" data-iconpos="top" data-inline="true" data-mini="true">
+                        <input type="submit" name="bouton_recherche" value="Rechercher" data-icon="search" data-iconpos="top" data-inline="true" data-mini="true" onclick="document.location.href='recherche_agent-investigation.html'">
                     </div>
                 </form>
-                <input type="button" value="Agent d'investigation" data-inline="true" data-mini="true" onclick="afficher(this,'table_agent', 'table_superviseur', 'table_centre-labo', 'table_centre-traitement');">
+
+                <!-- A SUPPRIMER, lorsque les interfaces Superviseurs et Centre sont réalisés-->
+                <input type="button" value="Agent investigation" data-inline="true" data-mini="true" onclick="afficher(this,'table_agent', 'table_superviseur', 'table_centre-labo', 'table_centre-traitement')">
                 <input type="button" value="Superviseur" data-inline="true" data-mini="true" onclick="afficher(this,'table_superviseur', 'table_agent', 'table_centre-labo', 'table_centre-traitement')">
                 <input type="button" value="Centre de transit" data-inline="true" data-mini="true" onclick="afficher(this,'table_centre-labo', 'table_agent', 'table_superviseur', 'table_centre-traitement')">
                 <input type="button" value="Centre de traitement" data-inline="true" data-mini="true" onclick="afficher(this,'table_centre-traitement', 'table_agent', 'table_superviseur', 'table_centre-labo')"><br>
-                <table id="table_agent" style="display:none">
-                    Tableau agent investigateur
+
+                <table id="table_agent">
+                    <tr>
+                        <td>Tableau agent investigateur</td>
+                    </tr>
                     <!-- 1ère ligne -->
                     <tr>
                         <td><a href="#pageConfirmeProbable" data-transition="slide">Cas confirmé/probable</a></td>
@@ -73,12 +88,19 @@
 
                     <!-- 2ème ligne -->
                     <tr>
+                        <td>+ Nouveau cas</td>
+                    </tr>
+
+                    <!-- 3ème ligne -->
+                    <tr>
                         <td>Liste des personnes à investiguer</td>
                     </tr>
                 </table><br>
 
                 <table id="table_superviseur" style="display:none">
-                    Tableau Superviseur
+                    <tr>
+                        <td>Tableau Superviseur</td>
+                    </tr>
                     <!-- 1ère ligne -->
                     <tr>
                         <td><a href="#pagePersonneContact" data-transition="slide">Personnes Contacts</a></td>
@@ -97,24 +119,26 @@
                     <tr>
                         <td>Contacts non affectés</td>
                         <td></td>
-                        <td><a href="#pageEtablissement" data-transition="slide">Etablissement</a></td>
+                        <td>Visiteurs médicaux</td>
                     </tr>
 
                     <!-- 4ème ligne -->
                     <tr>
                         <td>Contacts perdu de vue/en déplacement (issus d'un autre secteur)</td>
                         <td></td>
-                        <td>Nouveau visiteur médical</td>
+                        <td>+ Nouveau visiteur médical</td>
                     </tr>
 
                     <!-- 5ème ligne -->
                     <tr>
-                        <td>Nouveau contact</td>
+                        <td>+ Nouveau contact</td>
                     </tr>
                 </table><br>
 
                 <table id="table_centre-labo" style="display:none">
-                    Tableau Centre de transit/laboration
+                    <tr>
+                        <td>Tableau Centre de transit/laboration</td>
+                    </tr>
                     <!-- 1ère ligne -->
                     <tr>
                         <td><a href="#pageConfirmeProbable" data-transition="slide">Cas confirmé/probable</a></td>
@@ -124,12 +148,14 @@
                     <!-- 2ème ligne -->
                     <tr>
                         <td></td>
-                        <td>Nouveau contact</td>
+                        <td>+ Nouveau contact</td>
                     </tr>
                 </table><br>
 
                 <table id="table_centre-traitement" style="display:none">
-                    Tableau Centre de traitement
+                    <tr>
+                        <td>Tableau Centre de traitement</td>
+                    </tr>
                     <!-- 1ère ligne -->
                     <tr>
                         <td><a href="#pageConfirmeProbable" data-transition="slide">Cas confirmé/probable</a></td>
@@ -139,7 +165,7 @@
                     <!-- 2ème ligne -->
                     <tr>
                         <td>Cas suivi</td>
-                        <td>Nouveau contact</td>
+                        <td>+ Nouveau contact</td>
                     </tr>
                 </table>
             </div>
