@@ -19,10 +19,10 @@
         <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <!-- permet d'afficher le menu de navigation sur la page actuelle-->
         <script>
-            $(function() {
-                $( "body>[data-role='panel']" ).panel();
-            });
-        </script>
+                $(function() {
+                    $( "body>[data-role='panel']" ).panel();
+                });
+            </script>
     </head>
 
     <body>
@@ -42,23 +42,43 @@
         </ul>
     </div>
 
-    <div data-role="page" id="pageRecherche">
+    <div data-role="page" id="pageConfirme">
         <div data-role="header" id="header">
             <a href="#menu_navigation" data-transition="slide" class="ui-btn ui-btn-b ui-icon-bars ui-btn-icon-left ui-btn-icon-notext"></a>
-            <h1>Resultat de recherche</h1>
+            <h1>Cas confirmés / probables</h1>
         </div>
 
         <div data-role="main" class="ui-content">
-            <form id="recherche" >
-                <b>Recherche rapide. </b><i>La recherche s'effectue sir m'ensemble cas confirmés, cas probables, personnes contacts.</i>
-                <div class="ui-field-contain">
-                    <label for="recherche_name">Nom</label>
-                    <input type="text" name="reseach_name" id="recherche_name">
+            <form id="recherche-confirme">
+                <div >
+                    <label for="recherche-cas">Cas</label>
+                    <fieldset id="recherche-cas">
+                        <label><input type="checkbox" name="checkbox_cas" value="P - Probable">P - Probable</label>
+                        <label><input type="checkbox" name="checkbox_cas" value="C - Confirmé">C - Confirmé</label>
+                    </fieldset>
 
-                    <label for="recherche_prenom">Prénom</label>
-                    <input type="text" name="reseach_prenom" id="recherche_prenom" data-inline="true">
+                    <label for="recherche-date">Date d'identification</label>
+                    <fieldset id="recherche-date">
+                        entre <input type="date" data-inline="true" data-icon="calendar">
+                        et <input type="date" data-inline="true" data-icon="calendar">
+                    </fieldset>
 
-                    <input type="submit" name="bouton_recherche" value="Rechercher" data-icon="search" data-iconpos="top" data-inline="true" data-mini="true">
+                    <label for="recherche-fiches">Saisie des fiches</label>
+                    <fieldset id="recherche-fiches">
+                        <label><input type="checkbox" name="checkbox_fiches" value="20%">20%</label>
+                        <label><input type="checkbox" name="checkbox_fiches" value="40%">40%</label>
+                        <label><input type="checkbox" name="checkbox_fiches" value="60%">60%</label>
+                        <label><input type="checkbox" name="checkbox_fiches" value="80%">80%</label>
+                        <label><input type="checkbox" name="checkbox_fiches" data-inline="true" value="100%">100%</label>
+                    </fieldset>
+
+                    <input type="button" value="Initialiser les filtres" data-icon="back" data-iconpos="top" data-inline="true" data-mini="true">
+                </div>
+
+                <div>
+                    <input type="button" value="Créer un cas confirmé" data-inline="true">
+                    <input type="button" value="Créer un cas probable" data-inline="true">
+                    <input type="button" value="Imprimer la liste" data-inline="true">
                 </div>
             </form>
 
@@ -101,30 +121,6 @@
                     <td>Seine-et-Marne</td>
                     <td>Fontainebleau</td>
                     <td></td>
-                </tr>
-                <tr>
-                    <td>P</td>
-                    <td>16/01/2016</td>
-                    <td>Doe</td>
-                    <td>Jason</td>
-                    <td></td>
-                    <td>M</td>
-                    <td>21/01/1978</td>
-                    <td>Ile-de France</td>
-                    <td>Paris</td>
-                    <td>13ème arrondissement</td>
-                </tr>
-                <tr>
-                    <td>C</td>
-                    <td>28/02/2017</td>
-                    <td>Conway</td>
-                    <td>Anna</td>
-                    <td></td>
-                    <td>F</td>
-                    <td>18/04/1984</td>
-                    <td>Palaiseau</td>
-                    <td>Essonne</td>
-                    <td>Evry</td>
                 </tr>
                 </tbody>
             </table>
