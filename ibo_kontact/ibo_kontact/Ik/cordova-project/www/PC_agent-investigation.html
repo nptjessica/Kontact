@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+
+        <link href="css/themes/2/bookit.min.css" rel="stylesheet" />
+        <link href="css/themes/2/jquery.mobile.icons.min.css" rel="stylesheet" />
+        <link href="lib/jqm/1.4.5/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+        <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+
+        <!-- permet d'utiliser le plugin  -->
+        <script type="text/javascript" src="js/sorttable.js"></script>
+
+        <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <!-- permet d'afficher le menu de navigation sur la page actuelle-->
+        <script>
+                    $(function() {
+                        $( "body>[data-role='panel']" ).panel();
+                    });
+                </script>
+    </head>
+
+    <body>
+        <div data-role="panel" id="menu_navigation" data-display="push">
+            <ul>
+                <li><a href="#pageAccueil" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-home">Accueil/Tableau de bord</a></li>
+                <li><a href="#pageConfirmeProbable" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Cas confirmé/probable</a></li>
+                <li><a href="#pagePersonneContact" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Personne Contact</a></li>
+
+                <li><a href="#pageVisiteur" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Visiteurs</a></li>
+                <li><a href="#pageVisiteurMedical" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Visiteurs Medicaux</a></li>
+                <li><a href="#pageEtablissement" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Etablissement</a></li>
+
+                <li><a href="#pageStatistiques" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Statistiques</a></li>
+                <li><a href="#pageParametrage" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-gear">Paramétrage</a></li>
+                <li><input type="submit" value="Déconnexion" data-icon="delete"></li>
+            </ul>
+        </div>
+
+        <div data-role="page" id="pageConfirme">
+            <div data-role="header" id="header">
+                <a href="#menu_navigation" data-transition="slide" class="ui-btn ui-btn-b ui-icon-bars ui-btn-icon-left ui-btn-icon-notext"></a>
+                <h1>Cas confirmés / probables</h1>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <form id="recherche-confirme">
+                    <div  class="ui-field-contain">
+                        <label for="recherche-cas">Cas</label>
+                        <fieldset id="recherche-cas" data-role="controlgroup" data-type="horizontal">
+                            <label><input type="checkbox" name="checkbox_cas" value="P - Probable">P - Probable</label>
+                            <label><input type="checkbox" name="checkbox_cas" value="C - Confirmé">C - Confirmé</label>
+                        </fieldset>
+
+                        <label for="recherche-date">Date d'identification</label>
+                        <fieldset id="recherche-date">
+                            entre <input type="date" data-inline="true" data-icon="calendar">
+                            et <input type="date" data-inline="true" data-icon="calendar">
+                        </fieldset>
+
+                        <label for="recherche-fiches">Saisie des fiches</label>
+                        <fieldset id="recherche-fiches" data-role="controlgroup" data-type="horizontal">
+                            <label><input type="checkbox" name="checkbox_fiches" value="20%">20%</label>
+                            <label><input type="checkbox" name="checkbox_fiches" value="40%">40%</label>
+                            <label><input type="checkbox" name="checkbox_fiches" value="60%">60%</label>
+                            <label><input type="checkbox" name="checkbox_fiches" value="80%">80%</label>
+                            <label><input type="checkbox" name="checkbox_fiches" data-inline="true" value="100%">100%</label>
+                        </fieldset>
+
+                        <input type="reset" value="Initialiser les filtres" data-icon="back" data-iconpos="top" data-inline="true" data-mini="true">
+                    </div>
+
+                    <div>
+                        <button class="ui-btn ui-btn-inline"><img name="+" src="img/confirme+.png" width="25%" height="25%"><br>Créer un cas confirmé</button>
+                        <button class="ui-btn ui-btn-inline"><img name="+" src="img/probable+.png" width="25%" height="25%"><br>Créer un cas probable</button>
+                        <button class="ui-btn ui-btn-inline"><img name="+" src="img/printer.png" width="45%" height="45%"><br>Imprimer la liste</button>
+                    </div>
+                </form>
+
+                <table id="recherche-table" class="sortable">
+                    <thead>
+                    <tr>
+                        <th class="sorttable_nosort">P/C</th>
+                        <th class="sorttable_nosort">Date identitif</th>
+                        <th>% saisie</th>
+                        <th>Nom</th>
+                        <th>Prénoms</th>
+                        <th>Surnom</th>
+                        <th>F/M</th>
+                        <th class="sorttable_nosort">Date de naissance</th>
+                        <th>Sous-Préfecture</th>
+                        <th>Ville/Village</th>
+                        <th>Quartier</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>P</td>
+                        <td>2/02/2017</td>
+                        <td>50</td>
+                        <td>Smith</td>
+                        <td>John</td>
+                        <td></td>
+                        <td>M</td>
+                        <td>14/07/1968</td>
+                        <td>Hauts-de-Seine</td>
+                        <td>Courbevoie</td>
+                        <td>Centre ville</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>5/03/2017</td>
+                        <td>80</td>
+                        <td>Bach</td>
+                        <td>Alexandra</td>
+                        <td>Alex</td>
+                        <td>F</td>
+                        <td>09/07/1969</td>
+                        <td>Seine-et-Marne</td>
+                        <td>Fontainebleau</td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+        <script src="scripts/jquery-2.2.4.min.js"></script>
+        <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+    </body>
+</html>
