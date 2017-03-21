@@ -159,8 +159,19 @@ onglet Visite, page Température*/
 }
 
 /*Agent Investigation
-page Resultat de recherche
+page Résultat de recherche
 afficher le signes permettant de trier le tableau des resultats de recherche*/
 table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
     content: " \25B4\25BE"
+}
+
+/*page Cas Confirmé/probable
+saisie des dates d'identification
+*/
+#recherche-date div{
+display:inline-block;
+}
+
+.recherche-date{
+    width:50%;
 }

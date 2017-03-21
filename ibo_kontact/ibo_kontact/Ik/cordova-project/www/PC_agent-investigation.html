@@ -50,7 +50,7 @@
 
             <div data-role="main" class="ui-content">
                 <form id="recherche-confirme">
-                    <div  class="ui-field-contain">
+                    <div class="ui-field-contain"> <!-- class pour avoir les boutons à la suite du texte-->
                         <label for="recherche-cas">Cas</label>
                         <fieldset id="recherche-cas" data-role="controlgroup" data-type="horizontal">
                             <label><input type="checkbox" name="checkbox_cas" value="P - Probable">P - Probable</label>
@@ -58,10 +58,10 @@
                         </fieldset>
 
                         <label for="recherche-date">Date d'identification</label>
-                        <fieldset id="recherche-date">
-                            entre <input type="date" data-inline="true" data-icon="calendar">
-                            et <input type="date" data-inline="true" data-icon="calendar">
-                        </fieldset>
+                        <div id="recherche-date">
+                            <span> entre <input type="date" class="recherche-date" data-icon="calendar"></span>
+                            <span>et <input type="date" class="recherche-date" data-icon="calendar"></span>
+                        </div>
 
                         <label for="recherche-fiches">Saisie des fiches</label>
                         <fieldset id="recherche-fiches" data-role="controlgroup" data-type="horizontal">

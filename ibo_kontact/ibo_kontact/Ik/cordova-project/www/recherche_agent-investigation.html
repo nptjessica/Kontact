@@ -19,124 +19,40 @@
         <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <!-- permet d'afficher le menu de navigation sur la page actuelle-->
         <script>
-            $(function() {
-                $( "body>[data-role='panel']" ).panel();
-            });
-        </script>
+                        $(function() {
+                            $( "body>[data-role='panel']" ).panel();
+                        });
+                    </script>
     </head>
 
     <body>
-    <div data-role="panel" id="menu_navigation" data-display="push">
-        <ul>
-            <li><a href="#pageAccueil" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-home">Accueil/Tableau de bord</a></li>
-            <li><a href="#pageConfirmeProbable" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Cas confirmé/probable</a></li>
-            <li><a href="#pagePersonneContact" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Personne Contact</a></li>
+        <div data-role="panel" id="menu_navigation" data-display="push">
+            <ul>
+                <li><a href="#pageAccueil" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-home">Accueil/Tableau de bord</a></li>
+                <li><a href="#pageConfirmeProbable" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Cas confirmé/probable</a></li>
+                <li><a href="#pagePersonneContact" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Personne Contact</a></li>
 
-            <li><a href="#pageVisiteur" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Visiteurs</a></li>
-            <li><a href="#pageVisiteurMedical" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Visiteurs Medicaux</a></li>
-            <li><a href="#pageEtablissement" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Etablissement</a></li>
+                <li><a href="#pageVisiteur" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Visiteurs</a></li>
+                <li><a href="#pageVisiteurMedical" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Visiteurs Medicaux</a></li>
+                <li><a href="#pageEtablissement" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Etablissement</a></li>
 
-            <li><a href="#pageStatistiques" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Statistiques</a></li>
-            <li><a href="#pageParametrage" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-gear">Paramétrage</a></li>
-            <li><input type="submit" value="Déconnexion" data-icon="delete"></li>
-        </ul>
-    </div>
-
-    <div data-role="page" id="pageRecherche">
-        <div data-role="header" id="header">
-            <a href="#menu_navigation" data-transition="slide" class="ui-btn ui-btn-b ui-icon-bars ui-btn-icon-left ui-btn-icon-notext"></a>
-            <h1>Resultat de recherche</h1>
+                <li><a href="#pageStatistiques" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Statistiques</a></li>
+                <li><a href="#pageParametrage" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-gear">Paramétrage</a></li>
+                <li><input type="submit" value="Déconnexion" data-icon="delete"></li>
+            </ul>
         </div>
 
-        <div data-role="main" class="ui-content">
-            <form id="recherche" >
-                <b>Recherche rapide. </b><i>La recherche s'effectue sir m'ensemble cas confirmés, cas probables, personnes contacts.</i>
-                <div class="ui-field-contain">
-                    <label for="recherche_name">Nom</label>
-                    <input type="text" name="reseach_name" id="recherche_name">
-
-                    <label for="recherche_prenom">Prénom</label>
-                    <input type="text" name="reseach_prenom" id="recherche_prenom" data-inline="true">
-
-                    <input type="submit" name="bouton_recherche" value="Rechercher" data-icon="search" data-iconpos="top" data-inline="true" data-mini="true">
-                </div>
-            </form>
-
-            <table id="recherche-table" class="sortable">
-                <thead>
-                <tr>
-                    <th class="sorttable_nosort">P/C</th>
-                    <th class="sorttable_nosort">Date identitif</th>
-                    <th>Nom</th>
-                    <th>Prénoms</th>
-                    <th>Surnom</th>
-                    <th>F/M</th>
-                    <th class="sorttable_nosort">Date de naissance</th>
-                    <th>Sous-Préfecture</th>
-                    <th>Ville/Village</th>
-                    <th>Quartier</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>P</td>
-                    <td>2/02/2017</td>
-                    <td>Smith</td>
-                    <td>John</td>
-                    <td></td>
-                    <td>M</td>
-                    <td>14/07/1968</td>
-                    <td>Hauts-de-Seine</td>
-                    <td>Courbevoie</td>
-                    <td>Centre ville</td>
-                </tr>
-                <tr>
-                    <td>C</td>
-                    <td>5/03/2017</td>
-                    <td>Bach</td>
-                    <td>Alexandra</td>
-                    <td>Alex</td>
-                    <td>F</td>
-                    <td>09/07/1969</td>
-                    <td>Seine-et-Marne</td>
-                    <td>Fontainebleau</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>P</td>
-                    <td>16/01/2016</td>
-                    <td>Doe</td>
-                    <td>Jason</td>
-                    <td></td>
-                    <td>M</td>
-                    <td>21/01/1978</td>
-                    <td>Ile-de France</td>
-                    <td>Paris</td>
-                    <td>13ème arrondissement</td>
-                </tr>
-                <tr>
-                    <td>C</td>
-                    <td>28/02/2017</td>
-                    <td>Conway</td>
-                    <td>Anna</td>
-                    <td></td>
-                    <td>F</td>
-                    <td>18/04/1984</td>
-                    <td>Palaiseau</td>
-                    <td>Essonne</td>
-                    <td>Evry</td>
-                </tr>
-                </tbody>
-            </table>
+        <div data-role="page" id="pageConfirme">
+            <div data-role="header" id="header">
+                <a href="#menu_navigation" data-transition="slide" class="ui-btn ui-btn-b ui-icon-bars ui-btn-icon-left ui-btn-icon-notext"></a>
+                <h1>Cas confirmés / probables</h1>
+            </div>
         </div>
 
-
-    </div>
-
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
-    <script type="text/javascript" src="scripts/index.js"></script>
-    <script src="scripts/jquery-2.2.4.min.js"></script>
-    <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+        <script src="scripts/jquery-2.2.4.min.js"></script>
+        <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
     </body>
 </html>
