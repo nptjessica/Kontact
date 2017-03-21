@@ -168,10 +168,21 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 /*page Cas Confirmé/probable
 saisie des dates d'identification
 */
-#recherche-date div{
-display:inline-block;
+#recherche-confirme{
+width: 60%;
+background-color:ButtonHighlight;
+position:relative;
 }
 
-.recherche-date{
-    width:50%;
+/*date d'identification + bouton "Initialiser les filtres"*/
+#recherche-date div{
+display:inline-block;
+width:20%;
+}
+
+#recherche-options{
+display:inline-block;
+    position:relative;
+    top:50%;
+    left:103%;
 }

@@ -55,12 +55,14 @@
                         <fieldset id="recherche-cas" data-role="controlgroup" data-type="horizontal">
                             <label><input type="checkbox" name="checkbox_cas" value="P - Probable">P - Probable</label>
                             <label><input type="checkbox" name="checkbox_cas" value="C - Confirmé">C - Confirmé</label>
+
                         </fieldset>
 
                         <label for="recherche-date">Date d'identification</label>
                         <div id="recherche-date">
                             <span> entre <input type="date" class="recherche-date" data-icon="calendar"></span>
                             <span>et <input type="date" class="recherche-date" data-icon="calendar"></span>
+                            <span><input type="reset" value="Initialiser les filtres" data-icon="back" data-iconpos="top" data-inline="true" data-mini="true"></span>
                         </div>
 
                         <label for="recherche-fiches">Saisie des fiches</label>
@@ -72,14 +74,13 @@
                             <label><input type="checkbox" name="checkbox_fiches" data-inline="true" value="100%">100%</label>
                         </fieldset>
 
-                        <input type="reset" value="Initialiser les filtres" data-icon="back" data-iconpos="top" data-inline="true" data-mini="true">
+                        <div id="recherche-options">
+                            <button class="ui-btn ui-btn-inline ui-mini"><img name="+" src="img/confirme+.png" width="15%" height="15%"><br>Créer un cas confirmé</button>
+                            <button class="ui-btn ui-btn-inline ui-mini"><img name="+" src="img/probable+.png" width="15%" height="15%"><br>Créer un cas probable</button>
+                            <button class="ui-btn ui-btn-inline ui-mini"><img name="+" src="img/printer.png" width="35%" height="35%"><br>Imprimer la liste</button>
+                        </div>
                     </div>
 
-                    <div>
-                        <button class="ui-btn ui-btn-inline"><img name="+" src="img/confirme+.png" width="25%" height="25%"><br>Créer un cas confirmé</button>
-                        <button class="ui-btn ui-btn-inline"><img name="+" src="img/probable+.png" width="25%" height="25%"><br>Créer un cas probable</button>
-                        <button class="ui-btn ui-btn-inline"><img name="+" src="img/printer.png" width="45%" height="45%"><br>Imprimer la liste</button>
-                    </div>
                 </form>
 
                 <table id="recherche-table" class="sortable">
