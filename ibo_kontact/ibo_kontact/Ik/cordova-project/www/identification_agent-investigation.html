@@ -242,7 +242,7 @@
                             </div>
 
                             <div class="ui-field-contain">
-                                <label for="fiche_residence-village">Préfecture</label>
+                                <label for="fiche_residence-village">Ville/Village</label>
                                 <input list="fiche_residence-villages" name="fiche_residence-village" id="fiche_residence-village" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
                                 <datalist id="fiche_residence-villages">
                                     <option value="Sélectionner">
@@ -290,7 +290,7 @@
                             </div>
                         </div>
 
-                        <div id="passage" class="ui-content">
+                        <div id="passage">
                             <h3>LIEUX DE PASSAGE</h3>
                             <div class="ui-field-contain">
                                 <label for="passage-date">Entre le</label>
@@ -362,7 +362,88 @@
                 </div>
 
                 <div id="Parcours" class="tabcontent">
-                    détail des données jour par jour + état psychologique et physique
+                    <form>
+                        <div id="centre">
+                            <h3>FREQUENTE OU A FREQUENTE UN CENTRE DE SOINS</h3>
+                            <div class="ui-field-contain">
+                                <label for="centre-date">Entre le</label>
+                                <div id="centre-date">
+                                    <span><input type="date" class="centre-date" data-icon="calendar"></span>
+                                    <span>et le<input type="date" class="centre-date" data-icon="calendar"></span>
+
+                                </div>
+                            </div>
+
+                            <div class="ui-field-contain">
+                                <label for="fiche_centre-prefecture">Préfecture</label>
+                                <input list="fiche_centre-prefectures" name="fiche_centre-prefecture" id="fiche_centre-prefecture" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                                <datalist id="fiche_centre-prefectures">
+                                    <option value="Sélectionner">
+                                </datalist>
+                            </div>
+
+                            <div class="ui-field-contain">
+                                <label for="fiche_centre-sous-prefecture">Sous-Préfecture</label>
+                                <input list="fiche_centre-sous-prefectures" name="fiche_centre-sous-prefecture" id="fiche_centre-sous-prefecture" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                                <datalist id="fiche_centre-sous-prefectures">
+                                    <option value="Sélectionner">
+                                </datalist>
+                            </div>
+
+                            <div class="ui-field-contain">
+                                <label for="fiche_centre-village">Ville/Village</label>
+                                <input list="fiche_centre-villages" name="fiche_centre-village" id="fiche_centre-village" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                                <datalist id="fiche_centre-villages">
+                                    <option value="Sélectionner">
+                                </datalist>
+                            </div>
+
+                            <div class="ui-field-contain">
+                                <label for="fiche_centre-nom">Nom du centre</label>
+                                <input type="text" name="fiche_centre-nom" id="fiche_centre-nom" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+
+                            <div class="ui-field-contain">
+                                <label for="fiche_quitter">Quitte le centre de soin</label>
+                                <input list="fiche_quitter-centre" name="fiche_quitter" id="fiche_quitter" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                                <datalist id="fiche_quitter-centre">
+                                    <option value="Prélèvement négatif">
+                                </datalist>
+                            </div>
+                        </div>
+
+                        <div id="traditherapeute" >
+                            <h3>TRADITHERAPEUTE FREQUENTE AVANT LE DECES</h3>
+                            <div class="ui-field-contain">
+                                <label for="fiche_traditerapeute-prefecture">Préfecture</label>
+                                <input list="fiche_traditerapeute-prefectures" name="fiche_traditerapeute-prefecture" id="fiche_traditerapeute-prefecture" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                                <datalist id="fiche_traditerapeute-prefectures">
+                                    <option value="Sélectionner">
+                                </datalist>
+                            </div>
+
+                            <div class="ui-field-contain">
+                                <label for="fiche_traditerapeute-sous-prefecture">Sous-Préfecture</label>
+                                <input list="fiche_traditerapeute-sous-prefectures" name="fiche_traditerapeute-sous-prefecture" id="fiche_traditerapeute-sous-prefecture" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                                <datalist id="fiche_traditerapeute-sous-prefectures">
+                                    <option value="Sélectionner">
+                                </datalist>
+                            </div>
+
+                            <div class="ui-field-contain">
+                                <label for="fiche_traditerapeute-quartier">Quartier</label>
+                                <input type="text" name="fiche_traditerapeute-quartier" id="fiche_traditerapeute-quartier" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+
+                            <div class="ui-field-contain">
+                                <label for="fiche_traditerapeute-village">Ville/Village</label>
+                                <input list="fiche_traditerapeute-villages" name="fiche_traditerapeute-village" id="fiche_traditerapeute-village" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                                <datalist id="fiche_traditerapeute-villages">
+                                    <option value="Sélectionner">
+                                </datalist>
+                            </div>
+                        </div>
+                    </form>
                 </div>
 
                 <div id="Biologie" class="tabcontent">

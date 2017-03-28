@@ -190,14 +190,14 @@ display:inline-block;
 /*interface Agent d'investigation
 onglet Identification/Information sur le patient
 */
-#coord_perso, #residence-habituelle{
+#coord_perso, #residence-habituelle, #centre{
 width:47%;
 position:relative;
 float:left;
 display:inline;
 }
 
-#coord_entourage, #passage{
+#coord_entourage, #passage, #traditherapeute{
 width:47%;
 position:relative;
 float:right;
@@ -213,7 +213,7 @@ margin-bottom:0px;
 display:inline;}
 
 /*onglet Résidence*/
-#passage-date div{
+#passage-date div, #centre-date div{
 display:inline-block;
 width:35%;
 }
