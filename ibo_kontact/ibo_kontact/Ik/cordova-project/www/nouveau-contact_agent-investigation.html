@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+
+        <link href="css/themes/2/bookit.min.css" rel="stylesheet" />
+        <link href="css/themes/2/jquery.mobile.icons.min.css" rel="stylesheet" />
+        <link href="lib/jqm/1.4.5/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+        <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <title>Ibo Kontact</title>
+        <!-- permet d'afnouvr le menu de navigation sur la page actuelle-->
+        <script>
+            $(function() {
+                $( "body>[data-role='panel']" ).panel();
+            });
+            </script>
+    </head>
+
+    <body>
+    <div data-role="page" id="nouv-infos">
+        <div data-role="panel" id="menu_navigation" data-display="push">
+            <ul>
+                <li><a href="index_agent-investigation.html" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-home">Accueil/Tableau de bord</a></li>
+                <li><a href="PC_agent-investigation.html" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Cas confirmé/probable</a></li>
+                <li><a href="#pagePersonneContact" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Personne Contact</a></li>
+
+                <li><a href="#pageVisiteur" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Visiteurs</a></li>
+                <li><a href="#pageVisiteurMedical" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Visiteurs Medicaux</a></li>
+                <li><a href="#pageEtablissement" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Etablissement</a></li>
+
+                <li><a href="#pageStatistiques" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Statistiques</a></li>
+                <li><a href="#pageParametrage" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-gear">Paramétrage</a></li>
+                <li><input type="submit" value="Déconnexion" data-icon="delete"></li>
+            </ul>
+        </div>
+
+        <div data-role="header" id="header">
+            <a href="#menu_navigation" data-transition="slide" class="ui-btn ui-btn-b ui-icon-bars ui-btn-icon-left ui-btn-icon-notext"></a>
+            <h1>Infos de la personne</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div data-role="tabs" class="ui-content">
+                <ul class="tab">
+                    <li><a class="tablinks" onclick="openOnglet(event, 'Nouv-Identification')">Identification</a></li>
+                    <li><a class="tablinks" onclick="openOnglet(event, 'Nouv-Residence')">Résidence/Lieux de passage</a></li>
+                    <li><a class="tablinks" onclick="openOnglet(event, 'Nouv-Parcours')">Parcours thérapeutique</a></li>
+                    <li><a class="tablinks" onclick="openOnglet(event, 'Nouv-Suivi')">Suivi par/Historique des visites</a></li>
+
+                </ul>
+            </div>
+
+            <div id="Nouv-Identification" class="tabcontent" >
+                <form method="POST">
+                    <div id="coord_perso" >
+                        <h3>COORDONNEES PRESONNELLES</h3>
+                        <div class="ui-field-contain">
+                            <label for="nouv_nom">Nom</label>
+                            <input type="text" name="nouv_nom" id="nouv_nom" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_prenom1">Prénom 1</label>
+                            <input type="text" name="nouv_prenom1" id="nouv_prenom1" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_prenom2">Prénom 2</label>
+                            <input type="text" name="nouv_prenom2" id="nouv_prenom2" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_surnom">Surnom</label>
+                            <input type="text" name="nouv_surnom" id="nouv_surnom" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_sexe">Sexe</label>
+                            <input list="nouv_sexes" name="nouv_sexe" id="nouv_sexe" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="nouv_sexes">
+                                <option value="F/M">
+                                <option value="F">
+                                <option value="M">
+                            </datalist>
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_date-naissance">Date de naissance</label>
+                            <input type="date" name="nouv_date-naissance" id="nouv_date-naissance" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <fieldset id="nouv_pro-sante" data-role="controlgroup" data-type="horizontal">
+                                <legend>Professionnel de santé</legend>
+                                <label for="nouv_oui">Oui</label>
+                                <input type="radio" id="nouv_oui" name="radio" value="Oui">
+                                <label for="nouv_non">Non</label>
+                                <input type="radio" id="nouv_non" name="radio" value="Non">
+                            </fieldset></div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_fonction">Fonction</label>
+                            <input list="nouv_fonctions" name="nouv_fonction" id="nouv_fonction" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="nouv_fonctions">
+                                <option value="Planteur/Eleveur">
+                                <option value="Boucher">
+                                <option value="Chasseur/Vendeur de viande de brousse">
+                                <option value="Mineur">
+                                <option value="Chef religieux">
+                                <option value="Ménagère">
+                                <option value="Etudiant">
+                                <option value="Enfant">
+                                <option value="Médécin traditionnel">
+                                <option value="Commerçant">
+                                <option value="Transporteur">
+                                <option value="Professsionel de la santé">
+                            </datalist></div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_lieu">Lieu d'activité</label>
+                            <input list="nouv_lieux" name="nouv_lieu" id="nouv_lieu" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="nouv_lieux">
+                                <option value="Sélectionner">
+                                <option value="à compléter">
+                            </datalist></div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_ville">Village/Ville</label>
+                            <input type="text" name="nouv_ville" id="nouv_ville" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+                    </div>
+
+                    <div id="coord_entourage">
+                        <h3>COORDONNEES ENTOURAGE</h3>
+                        <div class="ui-field-contain">
+                            <label for="nouv_chef-nom">Nom du chef de famille</label>
+                            <input type="text" name="nouv_chef" id="nouv_chef-nom" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_chef-prenom">Prénom du chef de famille</label>
+                            <input type="text" name="nouv_chef-prenom" id="nouv_chef-prenom" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_chef-tel1">Téléphone 1 chef de famille</label>
+                            <input type="text" name="nouv_chef-tel1" id="nouv_chef-tel1" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_chef-tel2">Téléphone 2 chef de famille</label>
+                            <input type="text" name="nouv_chef-tel2" id="nouv_chef-tel2" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_proche-nom">Nom proche (ami, voisin, etc.)</label>
+                            <input type="text" name="nouv_proche-nom" id="nouv_proche-nom" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_proche-prenom">Prenom proche</label>
+                            <input type="text" name="nouv_proche-prenom" id="nouv_proche-prenom" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_proche-tel1">Téléphone proche 1</label>
+                            <input type="text" name="nouv_proche-tel1" id="nouv_proche-tel1" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_proche-tel2">Téléphone proche 2</label>
+                            <input type="text" name="nouv_proche-tel2" id="nouv_proche-tel2" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+                        <hr>
+                        <div class="ui-field-contain">
+                            <label>Informations fournies par: </label>   <input list="infos-fournies">
+                            <datalist id="infos-fournies">
+                                <option value="Autre">
+                            </datalist>
+                            <input type="text" name="nouv_ville" id="nouv_autre-nom" value ="" placeholder="Nom,Prénom" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <input type="text" name="nouv_ville" id="nouv_autre-adresse" value ="" placeholder="Adresse" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <div class="ui-field-contain">
+                                <label for="nouv_tel-champ">Téléphone</label>
+                                <input type="text" name="nouv_ville" id="nouv_tel-champ" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="nouv_immuno">
+                        <h3>SITUATION IMMUNOLOGIQUE</h3>
+                        <div class="ui-field-contain">
+                            <fieldset id="nouv_vaccine" data-role="controlgroup" data-type="horizontal">
+                                <legend>Vacciné Ebola</legend>
+                                <label for="nouv_oui">Oui</label>
+                                <input type="radio" id="nouv_vaccine-oui" name="radio" value="Oui">
+                                <label for="nouv_non">Non</label>
+                                <input type="radio" id="nouv_vaccine-non" name="radio" value="Non">
+                            </fieldset>
+                        </div>
+                        <div class="ui-field-contain">
+                            <label for="nouv_date-vaccination">Date de naissance</label>
+                            <input type="date" name="nouv_date-vaccination" id="nouv_date-vaccination" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+                        <div class="ui-field-contain">
+                            <fieldset id="nouv_type-vaccin" data-role="controlgroup" data-type="horizontal">
+                                <legend>Professionnel de santé</legend>
+                                <label for="nouv_oui">Oui</label>
+                                <input type="radio" id="nouv_VSV" name="radio" value="VSV">
+                                <label for="nouv_non">Non</label>
+                                <input type="radio" id="nouv_GSK" name="radio" value="GSK">
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="Nouv-Residence" class="tabcontent">
+                <form method="POST">
+                    <div id="residence-habituelle" >
+                        <h3>RESIDENCE HABITUELLE</h3>
+                        <div class="ui-field-contain">
+                            <label for="nouv_residence-prefecture">Préfecture</label>
+                            <input list="nouv_residence-prefectures" name="nouv_residence-prefecture" id="nouv_residence-prefecture" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="nouv_residence-prefectures">
+                                <option value="Sélectionner">
+                            </datalist>
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_residence-sous-prefecture">Sous-Préfecture</label>
+                            <input list="nouv_residence-sous-prefectures" name="nouv_residence-sous-prefecture" id="nouv_residence-sous-prefecture" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="nouv_residence-sous-prefectures">
+                                <option value="Sélectionner">
+                            </datalist>
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_residence-village">Ville/Village</label>
+                            <input list="nouv_residence-villages" name="nouv_residence-village" id="nouv_residence-village" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="nouv_residence-villages">
+                                <option value="Sélectionner">
+                            </datalist>
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_residence-quartier">Quartier</label>
+                            <input type="text" name="nouv_residence-quartier" id="nouv_residence-quartier" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_maison">Maison</label>
+                            <input type="text" name="nouv_maison" id="nouv_maison" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_residence-tel1">Téléphone 1</label>
+                            <input type="text" name="nouv_residence-tel1" id="nouv_residence-tel1" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_residence-tel2">Téléphone 2</label>
+                            <input type="text" name="nouv_residence-tel2" id="nouv_residence-tel2" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <p> Information sur l'Habitat</p>
+                        <div class="ui-field-contain">
+                            <label for="nouv_habitat">Type d'habitat</label>
+                            <input list="nouv_habitats" name="nouv_habitat" id="nouv_habitat" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="nouv_habitats">
+                                <option value="Sélectionner">
+                            </datalist>
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_nb-famille">Nb famille dans l'habitat</label>
+                            <input type="text" name="nouv_nb-famille" id="nouv_nb-famille" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_nb-personnes">Nb de personnes</label>
+                            <input type="text" name="nouv_nb-personnes" id="nouv_nb-personnes" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+                    </div>
+
+                    <div id="passage">
+                        <h3>LIEUX DE PASSAGE</h3>
+                        <div class="ui-field-contain">
+                            <label for="passage-date">Entre le</label>
+                            <div id="passage-date">
+                                <span><input type="date" class="passage-date" data-icon="calendar"></span>
+                                <span>et le<input type="date" class="passage-date" data-icon="calendar"></span>
+
+                            </div>
+                        </div>
+
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_moyen">Moyen de déplacement</label>
+                            <input list="nouv_moyens" name="nouv_moyen" id="nouv_moyen" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="nouv_moyens">
+                                <option value="Taxi collectif">
+                                <option value="Moto taxi">
+                                <option value="Voiture">
+                                <option value="Bateau">
+                                <option value="Autre">
+                            </datalist>
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_passage-prefecture">Préfecture</label>
+                            <input list="nouv_passage-prefectures" name="nouv_passage-prefecture" id="nouv_passage-prefecture" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="nouv_passage-prefectures">
+                                <option value="Sélectionner">
+                            </datalist>
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_passage-sous-prefecture">Sous-Préfecture</label>
+                            <input list="nouv_passage-sous-prefectures" name="nouv_passage-sous-prefecture" id="nouv_passage-sous-prefecture" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="nouv_passage-sous-prefectures">
+                                <option value="Sélectionner">
+                            </datalist>
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_passage-village">Ville/Village</label>
+                            <input list="nouv_passage-villages" name="nouv_passage-village" id="nouv_passage-village" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="nouv_passage-villages">
+                                <option value="Sélectionner">
+                            </datalist>
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_passage-quartier">Quartier</label>
+                            <input type="text" name="nouv_passage-quartier" id="nouv_passage-quartier" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_passage-habitat">Type</label>
+                            <input list="nouv_passage-habitats" name="nouv_passage-habitat" id="nouv_passage-habitat" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="nouv_passage-habitats">
+                                <option value="Maison">
+                                <option value="Hôtel">
+                                <option value="Autre">
+                            </datalist>
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="nouv_passage-tel">Téléphone</label>
+                            <input type="text" name="nouv_passage-tel" id="nouv_passage-tel" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="Nouv-Parcours" class="tabcontent">
+                <form method="POST">
+                    <div id="centre">
+                        <h3>FREQUENTE OU A FREQUENTE UN CENTRE DE SOINS</h3>
+                    </div>
+
+                    <div id="traditherapeute" >
+                        <h3>TRADITHERAPEUTE FREQUENTE AVANT LE DECES</h3>
+                    </div>
+                </form>
+            </div>
+
+            <div id="Nouv-Suivi" class="tabcontent">
+                <form method="POST">
+                    <label>Affecté à : </label>
+                    <div class="ui-field-contain">
+                        <label for="affecte-visiteur">Visiteur</label>
+                        <input list="affecte-visiteurs" name="affecte-visiteur" id="affecte-visiteur" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        <datalist id="affecte-visiteurs">
+                            <option value="Sélectionner">
+                        </datalist>
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="affecte-visiteur-medical">Visiteur Médical</label>
+                        <input list="affecte-visiteurs-medicaux" name="affecte-visiteur-medical" id="affecte-visiteur-medical" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        <datalist id="affecte-visiteurs-medicaux">
+                            <option value="Sélectionner">
+                        </datalist>
+                    </div>
+                </form>
+
+                <div data-role="tabs" class="ui-content">
+                    <ul class="tab">
+                        <li><a class="tablinks" onclick="openOnglet(event, 'Suivi-Visite')">Visite</a></li>
+                        <li><a class="tablinks" onclick="openOnglet(event, 'Suivi-Medical')">Médical</a></li>
+                        <li><a class="tablinks" onclick="openOnglet(event, 'Suivi-VisiteMedical')">Visite / Médical</a></li>
+                    </ul>
+                </div>
+
+                <div id="Suivi-Visite" class="tabcontent">
+                    détail des données jour par jour + état psychologique et physique + autres observation
+                </div>
+
+                <div id="Suivi-Medical" class="tabcontent">
+                    détail des vistes médical: T°, signes cliniques + détails + autres observations
+                </div>
+
+                <div id="Suivi-VisiteMedical" class="tabcontent">
+                    détail des données jour par jour + état psychologique et physique + autres observation
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="lib/fastclick/fastclick.min.js"></script>
+    <script src="lib/jquery/2.1.1/jquery-2.1.1.min.js"></script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="lib/jqm/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </body>
+</html>
+

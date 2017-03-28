@@ -89,7 +89,7 @@ ul.tab li a {
     display: inline-block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 8px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
@@ -188,7 +188,7 @@ display:inline-block;
 }
 
 /*interface Agent d'investigation
-onglet Identification/Information sur le patient
+tous les onglets
 */
 #coord_perso, #residence-habituelle, #centre, #deces-infos{
 width:47%;
@@ -209,11 +209,33 @@ margin-top:0px;
 margin-bottom:0px;
 }
 
-#fiche_immuno, #deces{
-display:inline;}
+#fiche_immuno, #deces {
+display:inline;
+}
+
+.tab{
+width:80%;
+}
+
+#onglet-options{
+position:relative;
+float:right;
+}
+#onglet-options input[type='submit']{
+margin-top:0px;
+margin-bottom:0px;
+font-size: 90%;
+}
+
 
 /*onglet Résidence*/
 #passage-date div, #centre-date div{
 display:inline-block;
 width:35%;
+}
+
+/*onglet Personnes contact*/
+#Contacts a{
+position:relative;
+float: right;
 }
