@@ -24,11 +24,16 @@
         <!-- A SUPPRIMER, lorsque les interfaces Superviseurs et Centre sont réalisés-->
         <!-- selon le bouton choisi, champ1 est affiché alors que champ2 et champ3 reste caché-->
         <script>
-            function afficher(btn,champ1,champ2,champ3,champ4){
+            function afficherCadre(btn,champ1,champ2,champ3,champ4){
             document.getElementById(champ1).style.display="inline";
             document.getElementById(champ2).style.display="none";
             document.getElementById(champ3).style.display="none";
             document.getElementById(champ4).style.display="none";
+            }
+
+            function afficherRecherche(btn, champ1, champ2){
+            document.getElementById(champ1).style.display="inline";
+            document.getElementById(champ2).style.display="none";
             }
             </script>
     </head>
@@ -66,108 +71,84 @@
                         <label for="recherche_prenom">Prénom</label>
                         <input type="text" name="reseach_prenom" id="recherche_prenom" data-inline="true">
 
-                        <input type="submit" name="bouton_recherche" value="Rechercher" data-icon="search" data-iconpos="top" data-inline="true" data-mini="true" onclick="document.location.href='recherche_agent-investigation.html'">
+                        <input type="submit" name="bouton_recherche" value="Rechercher" data-icon="search" data-iconpos="top" data-inline="true" data-mini="true" onclick="afficherRecherche(this, 'recherche', 'raccourcis')">
                     </div>
                 </form>
 
-                <!-- A SUPPRIMER, lorsque les interfaces Superviseurs et Centre sont réalisés-->
-                <input type="button" value="Agent investigation" data-inline="true" data-mini="true" onclick="afficher(this,'table_agent', 'table_superviseur', 'table_centre-labo', 'table_centre-traitement')">
-                <input type="button" value="Superviseur" data-inline="true" data-mini="true" onclick="afficher(this,'table_superviseur', 'table_agent', 'table_centre-labo', 'table_centre-traitement')">
-                <input type="button" value="Centre de transit" data-inline="true" data-mini="true" onclick="afficher(this,'table_centre-labo', 'table_agent', 'table_superviseur', 'table_centre-traitement')">
-                <input type="button" value="Centre de traitement" data-inline="true" data-mini="true" onclick="afficher(this,'table_centre-traitement', 'table_agent', 'table_superviseur', 'table_centre-labo')"><br>
+                <div id="raccourcis">
+                    <!-- A SUPPRIMER, lorsque les interfaces Superviseurs et Centre sont réalisés
+                    <input type="button" value="Agent investigation" data-inline="true" data-mini="true" onclick="afficherCadre(this,'table_agent', 'table_superviseur', 'table_centre-labo', 'table_centre-traitement')">
+                    <input type="button" value="Superviseur" data-inline="true" data-mini="true" onclick="afficherCadre(this,'table_superviseur', 'table_agent', 'table_centre-labo', 'table_centre-traitement')">
+                    <input type="button" value="Centre de transit" data-inline="true" data-mini="true" onclick="afficherCadre(this,'table_centre-labo', 'table_agent', 'table_superviseur', 'table_centre-traitement')">
+                    <input type="button" value="Centre de traitement" data-inline="true" data-mini="true" onclick="afficherCadre(this,'table_centre-traitement', 'table_agent', 'table_superviseur', 'table_centre-labo')"><br>
+                    -->
+                    <table id="table_agent">
+                        <tr>
+                            <td>Tableau agent investigateur</td>
+                        </tr>
+                        <!-- 1ère ligne -->
+                        <tr>
+                            <td><a href="#pageConfirmeProbable" data-transition="slide">Cas confirmé/probable</a></td>
+                            <td><a href="#pagePersonneContact" data-transition="slide">Personnes Contacts</a></td>
+                        </tr>
 
-                <table id="table_agent">
-                    <tr>
-                        <td>Tableau agent investigateur</td>
-                    </tr>
-                    <!-- 1ère ligne -->
-                    <tr>
-                        <td><a href="#pageConfirmeProbable" data-transition="slide">Cas confirmé/probable</a></td>
-                        <td><a href="#pagePersonneContact" data-transition="slide">Personnes Contacts</a></td>
-                    </tr>
+                        <!-- 2ème ligne -->
+                        <tr>
+                            <td>+ Nouveau cas</td>
+                        </tr>
 
-                    <!-- 2ème ligne -->
-                    <tr>
-                        <td>+ Nouveau cas</td>
-                    </tr>
+                        <!-- 3ème ligne -->
+                        <tr>
+                            <td>Liste des personnes à investiguer</td>
+                        </tr>
+                    </table><br>
 
-                    <!-- 3ème ligne -->
-                    <tr>
-                        <td>Liste des personnes à investiguer</td>
-                    </tr>
-                </table><br>
+                </div>
 
-                <table id="table_superviseur" style="display:none">
-                    <tr>
-                        <td>Tableau Superviseur</td>
-                    </tr>
-                    <!-- 1ère ligne -->
-                    <tr>
-                        <td><a href="#pagePersonneContact" data-transition="slide">Personnes Contacts</a></td>
-                        <td><a href="#pageConfirmeProbable" data-transition="slide">Cas confirmé/probable</a></td>
-                        <td><a href="#pageVisiteur" data-transition="slide">Visiteurs</a></td>
-                    </tr>
-
-                    <!-- 2ème ligne -->
-                    <tr>
-                        <td>Contact non vus</td>
-                        <td>Nouveau cas probable</td>
-                        <td>Nouveau visiteur</td>
-                    </tr>
-
-                    <!-- 3ème ligne -->
-                    <tr>
-                        <td>Contacts non affectés</td>
-                        <td></td>
-                        <td>Visiteurs médicaux</td>
-                    </tr>
-
-                    <!-- 4ème ligne -->
-                    <tr>
-                        <td>Contacts perdu de vue/en déplacement (issus d'un autre secteur)</td>
-                        <td></td>
-                        <td>+ Nouveau visiteur médical</td>
-                    </tr>
-
-                    <!-- 5ème ligne -->
-                    <tr>
-                        <td>+ Nouveau contact</td>
-                    </tr>
-                </table><br>
-
-                <table id="table_centre-labo" style="display:none">
-                    <tr>
-                        <td>Tableau Centre de transit/laboration</td>
-                    </tr>
-                    <!-- 1ère ligne -->
-                    <tr>
-                        <td><a href="#pageConfirmeProbable" data-transition="slide">Cas confirmé/probable</a></td>
-                        <td><a href="#pagePersonneContact" data-transition="slide">Personnes Contacts</a></td>
-                    </tr>
-
-                    <!-- 2ème ligne -->
-                    <tr>
-                        <td></td>
-                        <td>+ Nouveau contact</td>
-                    </tr>
-                </table><br>
-
-                <table id="table_centre-traitement" style="display:none">
-                    <tr>
-                        <td>Tableau Centre de traitement</td>
-                    </tr>
-                    <!-- 1ère ligne -->
-                    <tr>
-                        <td><a href="#pageConfirmeProbable" data-transition="slide">Cas confirmé/probable</a></td>
-                        <td><a href="#pagePersonneContact" data-transition="slide">Personnes Contacts</a></td>
-                    </tr>
-
-                    <!-- 2ème ligne -->
-                    <tr>
-                        <td>Cas suivi</td>
-                        <td>+ Nouveau contact</td>
-                    </tr>
-                </table>
+                <div id="recherche" style="display:none">
+                    <table id="recherche-table" class="sortable">
+                        <thead>
+                        <tr>
+                            <th class="sorttable_nosort">P/C</th>
+                            <th class="sorttable_nosort">Date identitif</th>
+                            <th>Nom</th>
+                            <th>Prénoms</th>
+                            <th>Surnom</th>
+                            <th>F/M</th>
+                            <th class="sorttable_nosort">Date de naissance</th>
+                            <th>Sous-Préfecture</th>
+                            <th>Ville/Village</th>
+                            <th>Quartier</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>P</td>
+                            <td>2/02/2017</td>
+                            <td>Smith</td>
+                            <td>John</td>
+                            <td></td>
+                            <td>M</td>
+                            <td>14/07/1968</td>
+                            <td>Hauts-de-Seine</td>
+                            <td>Courbevoie</td>
+                            <td>Centre ville</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>5/03/2017</td>
+                            <td>Bach</td>
+                            <td>Alexandra</td>
+                            <td>Alex</td>
+                            <td>F</td>
+                            <td>09/07/1969</td>
+                            <td>Seine-et-Marne</td>
+                            <td>Fontainebleau</td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 

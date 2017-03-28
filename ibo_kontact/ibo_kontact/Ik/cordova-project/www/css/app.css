@@ -186,3 +186,28 @@ display:inline-block;
     position:relative;
     float: right;
 }
+
+/*interface Agent d'investigation
+page Identification/Information sur le patient
+*/
+#coord_perso{
+width:47%;
+position:relative;
+float:left;
+display:inline;
+}
+
+#coord_entourage{
+width:47%;
+position:relative;
+float:right;
+display:inline;
+}
+
+.ui-field-contain{
+margin-top:0px;
+margin-bottom:0px;
+}
+
+#fiche_immuno{
+display:inline;}

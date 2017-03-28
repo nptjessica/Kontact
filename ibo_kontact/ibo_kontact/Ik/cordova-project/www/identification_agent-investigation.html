@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+
+        <link href="css/themes/2/bookit.min.css" rel="stylesheet" />
+        <link href="css/themes/2/jquery.mobile.icons.min.css" rel="stylesheet" />
+        <link href="lib/jqm/1.4.5/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+        <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <title>Ibo Kontact</title>
+        <!-- permet d'afficher le menu de navigation sur la page actuelle-->
+        <script>
+        $(function() {
+            $( "body>[data-role='panel']" ).panel();
+        });
+        </script>
+    </head>
+
+    <body>
+        <div data-role="page" id="fiche-infos">
+            <div data-role="panel" id="menu_navigation" data-display="push">
+                <ul>
+                    <li><a href="index_agent-investigation.html" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-home">Accueil/Tableau de bord</a></li>
+                    <li><a href="PC_agent-investigation.html" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Cas confirmé/probable</a></li>
+                    <li><a href="#pagePersonneContact" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Personne Contact</a></li>
+
+                    <li><a href="#pageVisiteur" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Visiteurs</a></li>
+                    <li><a href="#pageVisiteurMedical" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Visiteurs Medicaux</a></li>
+                    <li><a href="#pageEtablissement" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Etablissement</a></li>
+
+                    <li><a href="#pageStatistiques" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Statistiques</a></li>
+                    <li><a href="#pageParametrage" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-gear">Paramétrage</a></li>
+                    <li><input type="submit" value="Déconnexion" data-icon="delete"></li>
+                </ul>
+            </div>
+
+            <div data-role="header" id="header">
+                <a href="#menu_navigation" data-transition="slide" class="ui-btn ui-btn-b ui-icon-bars ui-btn-icon-left ui-btn-icon-notext"></a>
+                <h1>Infos de la personne</h1>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <div data-role="tabs" class="ui-content">
+                    <ul class="tab">
+                        <li><a class="tablinks" onclick="openOnglet(event, 'Identification')">Identification</a></li>
+                        <li><a class="tablinks" onclick="openOnglet(event, 'Residence')">Résidence/Lieux de passage</a></li>
+                        <li><a class="tablinks" onclick="openOnglet(event, 'Parcours')">Parcours thérapeutique</a></li>
+                        <li><a class="tablinks" onclick="openOnglet(event, 'Biologie')">Biologie</a></li>
+                        <li><a class="tablinks" onclick="openOnglet(event, 'Deces')">Décès</a></li>
+                        <li><a class="tablinks" onclick="openOnglet(event, 'Contacts')">Personnes contacts</a></li>
+                    </ul>
+                </div>
+
+                <div id="Identification" class="tabcontent" >
+                    <form method="POST">
+                        <div id="coord_perso" >
+                            <h3>COORDONNEES PRESONNELLES</h3>
+                            <div class="ui-field-contain">
+                            <label for="fiche_nom">Nom</label>
+                            <input type="text" name="fiche_nom" id="fiche_nom" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+
+                            <div class="ui-field-contain">
+                            <label for="fiche_prenom1">Prénom 1</label>
+                            <input type="text" name="fiche_prenom1" id="fiche_prenom1" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+
+                            <div class="ui-field-contain">
+                            <label for="fiche_prenom2">Prénom 2</label>
+                            <input type="text" name="fiche_prenom2" id="fiche_prenom2" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+
+                            <div class="ui-field-contain">
+                            <label for="fiche_surnom">Surnom</label>
+                            <input type="text" name="fiche_surnom" id="fiche_surnom" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+
+                            <div class="ui-field-contain">
+                            <label for="fiche_sexe">Sexe</label>
+                            <input list="fiche_sexes" name="fiche_sexe" id="fiche_sexe" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="fiche_sexes">
+                                <option value="F/M">
+                                <option value="F">
+                                <option value="M">
+                            </datalist>
+                            </div>
+
+                            <div class="ui-field-contain">
+                            <label for="fiche_date-naissance">Date de naissance</label>
+                            <input type="date" name="fiche_date-naissance" id="fiche_date-naissance" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+
+                            <div class="ui-field-contain">
+                            <fieldset id="fiche_pro-sante" data-role="controlgroup" data-type="horizontal">
+                                <legend>Professionnel de santé</legend>
+                                    <label for="fiche_oui">Oui</label>
+                                    <input type="radio" id="fiche_oui" name="radio" value="Oui">
+                                    <label for="fiche_non">Non</label>
+                                    <input type="radio" id="fiche_non" name="radio" value="Non">
+                            </fieldset></div>
+
+                            <div class="ui-field-contain">
+                            <label for="fiche_fonction">Fonction</label>
+                            <input list="fiche_fonctions" name="fiche_fonction" id="fiche_fonction" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="fiche_fonctions">
+                                <option value="Planteur/Eleveur">
+                                <option value="Boucher">
+                                <option value="Chasseur/Vendeur de viande de brousse">
+                                <option value="Mineur">
+                                <option value="Chef religieux">
+                                <option value="Ménagère">
+                                <option value="Etudiant">
+                                <option value="Enfant">
+                                <option value="Médécin traditionnel">
+                                <option value="Commerçant">
+                                <option value="Transporteur">
+                                <option value="Professsionel de la santé">
+                            </datalist></div>
+
+                            <div class="ui-field-contain">
+                            <label for="fiche_lieu">Lieu d'activité</label>
+                            <input list="fiche_lieux" name="fiche_lieu" id="fiche_lieu" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="fiche_lieux">
+                                <option value="Sélectionner">
+                                <option value="à compléter">
+                            </datalist></div>
+
+                            <div class="ui-field-contain">
+                            <label for="fiche_ville">Village/Ville</label>
+                            <input type="text" name="fiche_ville" id="fiche_ville" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+                        </div>
+
+                        <div id="coord_entourage">
+                            <h3>COORDONNEES ENTOURAGE</h3>
+                            <div class="ui-field-contain">
+                            <label for="fiche_chef-nom">Nom du chef de famille</label>
+                            <input type="text" name="fiche_chef" id="fiche_chef-nom" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+
+                            <div class="ui-field-contain">
+                            <label for="fiche_chef-prenom">Prénom du chef de famille</label>
+                            <input type="text" name="fiche_chef-prenom" id="fiche_chef-prenom" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+
+                            <div class="ui-field-contain">
+                            <label for="fiche_chef-tel1">Téléphone 1 chef de famille</label>
+                            <input type="text" name="fiche_chef-tel1" id="fiche_chef-tel1" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+
+                            <div class="ui-field-contain">
+                            <label for="fiche_chef-tel2">Téléphone 2 chef de famille</label>
+                            <input type="text" name="fiche_chef-tel2" id="fiche_chef-tel2" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+
+                            <div class="ui-field-contain">
+                            <label for="fiche_proche-nom">Nom proche (ami, voisin, etc.)</label>
+                            <input type="text" name="fiche_proche-nom" id="fiche_proche-nom" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+
+                            <div class="ui-field-contain">
+                            <label for="fiche_proche-prenom">Prenom proche</label>
+                            <input type="text" name="fiche_proche-prenom" id="fiche_proche-prenom" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+
+                            <div class="ui-field-contain">
+                            <label for="fiche_proche-tel1">Téléphone proche 1</label>
+                            <input type="text" name="fiche_proche-tel1" id="fiche_proche-tel1" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+
+                            <div class="ui-field-contain">
+                            <label for="fiche_proche-tel2">Téléphone proche 2</label>
+                            <input type="text" name="fiche_proche-tel2" id="fiche_proche-tel2" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+                            <hr>
+                            <div class="ui-field-contain">
+                                <label>Informations fournies par: </label>   <input list="infos-fournies">
+                                <datalist id="infos-fournies">
+                                    <option value="Autre">
+                                </datalist>
+                                <input type="text" name="fiche_ville" id="fiche_autre-nom" value ="" placeholder="Nom,Prénom" data-clear-btn="true" data-mini="true" data-inline="true">
+                                <input type="text" name="fiche_ville" id="fiche_autre-adresse" value ="" placeholder="Adresse" data-clear-btn="true" data-mini="true" data-inline="true">
+                                <div class="ui-field-contain">
+                                <label for="fiche_tel-champ">Téléphone</label>
+                                <input type="text" name="fiche_ville" id="fiche_tel-champ" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="fiche_immuno">
+                            <h3>SITUATION IMMUNOLOGIQUE</h3>
+                            <div class="ui-field-contain">
+                                    <fieldset id="fiche_vaccine" data-role="controlgroup" data-type="horizontal">
+                                        <legend>Vacciné Ebola</legend>
+                                        <label for="fiche_oui">Oui</label>
+                                        <input type="radio" id="fiche_vaccine-oui" name="radio" value="Oui">
+                                        <label for="fiche_non">Non</label>
+                                        <input type="radio" id="fiche_vaccine-non" name="radio" value="Non">
+                                    </fieldset>
+                                </div>
+                            <div class="ui-field-contain">
+                                <label for="fiche_date-vaccination">Date de naissance</label>
+                                <input type="date" name="fiche_date-vaccination" id="fiche_date-vaccination" data-clear-btn="true" data-mini="true" data-inline="true">
+                            </div>
+                            <div class="ui-field-contain">
+                                <fieldset id="fiche_type-vaccin" data-role="controlgroup" data-type="horizontal">
+                                    <legend>Professionnel de santé</legend>
+                                    <label for="fiche_oui">Oui</label>
+                                    <input type="radio" id="fiche_VSV" name="radio" value="VSV">
+                                    <label for="fiche_non">Non</label>
+                                    <input type="radio" id="fiche_GSK" name="radio" value="GSK">
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="Residence" class="tabcontent">
+                    détail des données jour par jour + état psychologique et physique
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="lib/fastclick/fastclick.min.js"></script>
+        <script src="lib/jquery/2.1.1/jquery-2.1.1.min.js"></script>
+
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="lib/jqm/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </body>
+</html>

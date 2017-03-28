@@ -35,7 +35,7 @@ $(document).on("mobileinit", function (event, ui) {
     $.mobile.defaultPageTransition = "slide";
 });
 
-app.signUpController = new BookIt.SignUpController();
+app.signUpCont//roller = new BookIt.SignUpController();
 app.signInController = new BookIt.SignInController();
 app.bookingsController = new BookIt.BookingsController();
 
@@ -157,8 +157,15 @@ function openOnglet(evt, nomOnglet) {
     evt.currentTarget.className += " active";
 }
 
-//interface Visiteur Médical
-//redirige vers la page Confirmation Enregistrement (id="confirmation-enregistrement")
+/*interface Visiteur Médical
+redirige vers la page Confirmation Enregistrement (id="confirmation-enregistrement")*/
 function redirectConfirmationEnregistrementMedical(){
     document.location.href='#confirmation-enregistrement-medical';
+}
+
+/*interface Agent d'investigation
+afficher la recherche*/
+function afficherRecherche(btn, champ1, champ2){
+            document.getElementById(champ1).style.display="inline";
+            document.getElementById(champ2).style.display="none";
 }

@@ -28,8 +28,8 @@
     <body>
         <div data-role="panel" id="menu_navigation" data-display="push">
             <ul>
-                <li><a href="#pageAccueil" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-home">Accueil/Tableau de bord</a></li>
-                <li><a href="#pageConfirmeProbable" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Cas confirmé/probable</a></li>
+                <li><a href="index_agent-investigation.html" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-home">Accueil/Tableau de bord</a></li>
+                <li><a href="PC_agent-investigation.html" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Cas confirmé/probable</a></li>
                 <li><a href="#pagePersonneContact" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Personne Contact</a></li>
 
                 <li><a href="#pageVisiteur" data-transition="slide" class="ui-btn ui-btn-b ui-corner-all">Visiteurs</a></li>
@@ -55,7 +55,6 @@
                         <fieldset id="recherche-cas" data-role="controlgroup" data-type="horizontal">
                             <label><input type="checkbox" name="checkbox_cas" value="P - Probable">P - Probable</label>
                             <label><input type="checkbox" name="checkbox_cas" value="C - Confirmé">C - Confirmé</label>
-
                         </fieldset>
 
                         <label for="recherche-date">Date d'identification</label>
@@ -81,7 +80,7 @@
                     <button class="ui-btn ui-btn-inline ui-mini"><img name="+" src="img/printer.png" width="35%" height="35%"><br>Imprimer la liste</button>
                 </div>
 
-                <table id="recherche-table" class="sortable">
+                <table id="pc-recherche-table" class="sortable">
                     <thead>
                     <tr>
                         <th class="sorttable_nosort">P/C</th>
