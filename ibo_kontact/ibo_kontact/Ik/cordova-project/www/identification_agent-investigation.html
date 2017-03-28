@@ -447,14 +447,10 @@
                 </div>
 
                 <div id="Biologie" class="tabcontent">
-                    détail des données jour par jour + état psychologique et physique
-                </div>
-
-                <div id="Deces" class="tabcontent">
                     <h3>PRELEVEMENTS BIOLOGIQUES</h3>
                     <div class="ui-field-contain">
-                        <label for="fiche_date-deces">Date</label>
-                        <input type="date" name="fiche_date-deces" id="fiche_date-deces" data-clear-btn="true" data-mini="true" data-inline="true">
+                        <label for="fiche_date-prelevement">Date</label>
+                        <input type="date" name="fiche_date-prelevement" id="fiche_date-prelevement" data-clear-btn="true" data-mini="true" data-inline="true">
                     </div>
 
                     <div class="ui-field-contain">
@@ -475,9 +471,59 @@
                         <label for="fiche_resultat">Résultat</label>
                         <input list="fiche_resultats" name="fiche_resultat" id="fiche_resultat" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
                         <datalist id="fiche_resultats">
-                        <option value="Sélectionner">
+                            <option value="Sélectionner">
                         </datalist>
                     </div>
+                </div>
+
+                <div id="Deces" class="tabcontent">
+                    <div id="deces-infos" >
+                        <h3>DECES</h3>
+                        <div class="ui-field-contain">
+                            <label for="fiche_date-deces">Date du décès</label>
+                            <input type="date" name="fiche_date-deces" id="fiche_date-deces" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="fiche_residence-prefecture">Préfecture</label>
+                            <input list="fiche_deces-prefectures" name="fiche_deces-prefecture" id="fiche_deces-prefecture" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="fiche_deces-prefectures">
+                                <option value="Sélectionner">
+                            </datalist>
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="fiche_deces-sous-prefecture">Sous-Préfecture</label>
+                            <input list="fiche_deces-sous-prefectures" name="fiche_deces-sous-prefecture" id="fiche_deces-sous-prefecture" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="fiche_deces-sous-prefectures">
+                                <option value="Sélectionner">
+                            </datalist>
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="fiche_deces-quartier">Quartier</label>
+                            <input type="text" name="fiche_deces-quartier" id="fiche_deces-quartier" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="fiche_deces-village">Ville/Village</label>
+                            <input list="fiche_deces-villages" name="fiche_deces-village" id="fiche_deces-village" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                            <datalist id="fiche_deces-villages">
+                                <option value="Sélectionner">
+                            </datalist>
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="fiche_date-funerailles">Date funérailles</label>
+                            <input type="date" name="fiche_date-funerailles" id="fiche_date-funerailles" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+
+                        <div class="ui-field-contain">
+                            <label for="fiche_lieu-funeraille">Lieu des funérailles</label>
+                            <input type="text" name="fiche_lieu-funeraille" id="fiche_lieu-funeraille" value ="" data-clear-btn="true" data-mini="true" data-inline="true">
+                        </div>
+                    </div>
+
                 </div>
 
                 <div id="Contacts" class="tabcontent">

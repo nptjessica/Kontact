@@ -190,7 +190,7 @@ display:inline-block;
 /*interface Agent d'investigation
 onglet Identification/Information sur le patient
 */
-#coord_perso, #residence-habituelle, #centre{
+#coord_perso, #residence-habituelle, #centre, #deces-infos{
 width:47%;
 position:relative;
 float:left;
