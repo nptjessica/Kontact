@@ -19,10 +19,10 @@
         <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <!-- permet d'afficher le menu de navigation sur la page actuelle-->
         <script>
-                        $(function() {
-                            $( "body>[data-role='panel']" ).panel();
-                        });
-                    </script>
+                            $(function() {
+                                $( "body>[data-role='panel']" ).panel();
+                            });
+                        </script>
     </head>
 
     <body>
@@ -45,58 +45,45 @@
     <div data-role="page" id="pageConfirme">
         <div data-role="header" id="header">
             <a href="#menu_navigation" data-transition="slide" class="ui-btn ui-btn-b ui-icon-bars ui-btn-icon-left ui-btn-icon-notext"></a>
-            <h1>Personnes contact</h1>
-            <a href="nouveau-contact_agent-investigation.html" data-transition="slide" class="ui-btn ui-btn-b ui-icon-bars ui-btn-icon-left ui-btn-icon-notext"></a>
+            <h1>Visiteur(s)</h1>
         </div>
 
         <div data-role="main" class="ui-content">
-            <form id="pers-contact">
-                <div class="ui-field-contain">
-                    <label for="statut">Statut</label>
-                    <fieldset id="statut" data-role="controlgroup" data-type="horizontal">
-                        <label><input type="checkbox" name="checkbox_statut" value="ok">OK</label>
-                        <label><input type="checkbox" name="checkbox_statut" value="pdv">Perdu de vue</label>
-                        <label><input type="checkbox" name="checkbox_statut" value="examen">Examen</label>
-                        <label><input type="checkbox" name="checkbox_statut" value="ok">Traitement</label>
-                        <input type="reset" value="Initialiser les filtres" data-icon="back" data-iconpos="top" data-inline="true" data-mini="true">
-                    </fieldset>
+            <input type="reset" value="Initialiser les filtres" data-icon="back" data-iconpos="top" data-inline="true" data-mini="true">
 
-                </div>
-            </form>
-
-            <table id="pers-contact-table" class="sortable">
+            <table id="visiteurs-table" class="sortable">
                 <thead>
                 <tr>
-                    <th class="sorttable_nosort">Status</th>
                     <th>Nom</th>
                     <th>Prénoms</th>
                     <th>Surnom</th>
                     <th>F/M</th>
-                    <th class="sorttable_nosort">Date de naissance</th>
+                    <th>Préfecture</th>
+                    <th>Sous-Préfecture</th>
                     <th>Ville/Village</th>
-                    <th>Prénom, Nom Cas d'origine</th>
+                    <th>Quartier</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>OK</td>
                     <td>Smith</td>
                     <td>John</td>
                     <td></td>
                     <td>M</td>
-                    <td>14/07/1968</td>
+                    <td>Ile-de-France</td>
+                    <td>Hauts-de-Seine</td>
                     <td>Courbevoie</td>
-                    <td>Max Dupont</td>
+                    <td>Centre ville</td>
                 </tr>
                 <tr>
-                    <td>Perdu de vue</td>
                     <td>Bach</td>
                     <td>Alexandra</td>
                     <td>Alex</td>
                     <td>F</td>
-                    <td>09/07/1969</td>
+                    <td>Ile-de-France</td>
+                    <td>Seine-et-Marne</td>
                     <td>Fontainebleau</td>
-                    <td>Anna Kushina</td>
+                    <td></td>
                 </tr>
                 </tbody>
             </table>
